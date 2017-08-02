@@ -1,0 +1,14 @@
+GitHub.com
+New Project
+Created GitHubRepAssignment
+Opened Command Prompt
+cd Desktop
+cd DojoAssignments
+md GitHubRepoAssignment
+cd GitHubRepAssignment
+git init
+copy NUL readme.md
+git add readme.md
+git commit -m "added info to file"
+git remote add origin https://github.com/gsongk/GitHubRepoAssignment.git
+git push -u origin master

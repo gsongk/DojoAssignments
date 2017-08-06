@@ -15,7 +15,7 @@ h1{
     display: block;
     max-width: 970px;
 }
-#list{
+.list{
     border-radius: 25px;
     background:rgb(0, 213, 255);
     color: green;
@@ -28,12 +28,13 @@ h1{
 .para{
     border-radius: 25px;
     background: green;
-    padding: 20px;
+    padding: 25px;
     margin: 5px;
     float: right; 
     display: block;
     max-width: 620px;
 }
+
 #info{
     border-radius: 15px;
     background: grey;

@@ -1,0 +1,36 @@
+body, html{
+    background-color: tan;
+    padding: 5px;
+    margin: 5px;
+    height: 100%;
+}
+h1{
+    text-align: center;
+    
+}
+img{
+    height: 210px;
+    width: 200px;
+    margin: 15px;
+}
+.logo{
+    
+}
+.sub1, .sub3, .sub2-1, .sub2-3, .sub3-1, .sub3-3, .sub4-1, .sub4-3{
+    border: solid;
+    border-width: 5px;
+    display: inline-block;
+    /* float: left; */
+    margin: 5px;
+    background: skyblue;
+
+}
+.sub2, .sub4, .sub2-2, .sub2-4, .sub3-2, .sub3-4, .sub4-2, .sub4-4{
+    border: solid;
+    border-width: 5px;
+    display: inline-block;
+    /* float: left; */
+    margin: 5px;
+    background: pink;
+
+}

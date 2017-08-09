@@ -4,57 +4,84 @@
     margin: 0px;
     border: 0px;
 }
-.para{
-    background: linear-gradient( white, plum);
-    height: 230px;
+body{
+    background: #6F5964;
+    font-family:Courier New, Courier, monospace;   
+    width: 1090px;  
 }
-.Buttons{
-    background: linear-gradient( white, plum);
-    width: 280px;
-    height: 170px;
+img{
+    padding: 0px;
+    margin: 0px;
 }
-.profilePic{
-    border: 5px, solid, white;
-    margin: 5px;
-    padding: 5px;
-    display: inline-block;
-} 
-.about{
-    margin: 5px;
-    padding: 5px;
-    display: inline-block;
-    width: 500px;
+#head{
+    background: #F9F9F9;
+    padding: 10px;
     vertical-align: top;
 }
-#title{
-    background: silver;
-    font-family: "lucida console", Courier New, Courier, monospace;
+.name{
+    margin-left: 20px;
+    display: inline-block;
+}
+.profile{
+    display: inline-block;
+    margin-left: 320px;
+}
+.picBody{
     display: block;
+    margin: 20px;
 }
-.laMode{
-    width: 280px;
-    height: 500px;
+.pic{
     display: inline-block;
-    margin: 5px;
+    border:5px solid #C0C0C0;
+}
+.aboutInfo h3{
+    background: #A1A1A8;
+    color: #FEFEFB;   
+    padding: 10px;
+}
+.aboutInfo{
+    background: #E7DEE7;
+    display: inline-block;
+    width: 630px;
+    height: 285px;
+    vertical-align: top;
+    font-weight: lighter;
+}
+.aboutInfo p{
+    margin: 10px 0px 10px 0px;
+    padding: 5px;
+}
+.aboutInfo a{
+    padding: 5px;
+}
+.laMode, .Family, .five{
+    width: 300px;
+    padding: 0px;
+    margin: 10px;
+    display: inline-block;
     vertical-align: top;
 }
-.family{
-    width: 280px;
-    height: 500px;
-    display: inline-block;
-    margin: 5px;
-    vertical-align: top;
+.laMode p, .Family p, .five p{
+    background: #E9E0E9;
+    padding: 10px;
+    height: 300px;
 }
-.fiveEleven{
+.Laicon, .Famicon, .Fiveicon{
+    background: #E9E0E9;
     width: 280px;
-    height: 500px;
-    display: inline-block;
-    margin: 5px;
-    vertical-align: top;
+    padding: 10px;
 }
-#contact{
-    background: white;
+.laMode h3, .Family h3, .five h3{
+    color: #FFFFFF;
+    background: #95949E;
+    width: 280px;
+    padding: 10px;
+}
+#footer{
+    background: #F8F8F8;
+    padding: 10px;
     text-align: center;
-    margin-top: 10px;
-    vertical-align: top;
+}
+.email{
+    text-align: center;
 }

@@ -1,5 +1,133 @@
 *{
     padding: 0px;
     margin: 0px;
-
+}
+body{
+    background: linear-gradient(#E7E7E7, white);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1000px;
+    height: 1200px;
+}
+#header h1{
+    display: inline-block;
+    vertical-align: top;;
+    font-size: 60px;
+}
+#header h2{
+    color: white;
+    font-size: 40px;
+    background: #4F81AC;
+    padding: 10px 10px 10px 20px;
+}
+#bodyPart{
+    display: inline-block;
+    width: 1000px;
+}
+.sideBar{
+    width: 250px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+}
+.sideBar button{
+    color: white;
+    padding: 20px;
+    background: #306FA6;
+    width: 220px;
+    border-radius: 10px;
+}
+ .sideBar hr{
+    margin: 25px 10px;
+    width: 250px;
+} 
+.ninja{
+    width: 250px;
+    height: 350px;
+    border-color: black;
+    background-image: url("images/ad_background.png");
+}
+.ninja p{
+    color: white;
+    padding-top: 10px;
+}
+.ninja img{
+    width: 250px;
+    position: static;
+    vertical-align: top;
+}
+.title{
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 5px 15px 30px;
+    height: 50px;
+}
+.phoneNum{
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    margin-left: 400px;
+}
+.phoneNum p{
+    font-size: 10px;
+    display:block;
+}
+.phoneImage img{
+    display: inline-block;
+    width: 40px;
+}
+.phoneImage span{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    color: #51C9E6;
+}
+.title{
+    display: inline-block;
+    width: 100px;
+}
+.title hr{
+    margin: 50px 0px;
+    width: 700px;
+}
+.stomach{
+    display: inline-block;
+    width: 700px;
+}
+.stomach h3{
+    color: #22659E;
+    font-size: 25px;
+    padding: 10px 0px;
+}
+.stomach span{
+    color:#0097AE;
+}
+.stomach img{
+    padding: 10px;
+    width: 300px;
+    margin-left: 150px;
+}
+.stomach li, .stomach ol{
+    padding: 10px 0px;
+}
+.big3{
+    display: inline-block;
+    border: 8px solid #0085E0;
+    width: 700px;
+    padding: 10px;
+}
+.big3 img{
+    width: 150px;
+    display: inline-block;
+}
+.big3 h3{
+    color: #22659E;
+    display: inline-block;
+    font-size: 25px;
+    padding: 10px 0px;
+    vertical-align: top;
+}
+.summary{
+    display: inline-block;
+    vertical-align: top;
+    width: 400px;
 }

@@ -1,0 +1,150 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#header{
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    height: 20px;
+}
+#header p{
+    width: 75px;
+    display: inline-block;
+    text-align: center;
+}
+h1{
+    color: #2A31B6;
+}
+.sideBar{
+    display:inline-block;
+    text-align: center;
+    padding: 10px;
+    width:5px;
+    margin-top: 50px;
+}
+.sideBar p{
+    height: 100px;
+    color: red;
+    text-align: center;
+}
+#periodicT{
+    vertical-align: top;
+    display: inline-block;
+    width: 1600px;
+}
+.blue{
+    display:inline-block;
+    vertical-align: top;
+    margin-left: 50px;
+}
+.c1{
+    display: inline-block;
+    vertical-align: top;
+    width:80px;
+}
+.c2{
+    display: inline-block;
+    vertical-align: top;
+    width:80px;
+    margin-top: 100px;
+}
+
+.h, .li, .na, .k, .rb, .cs, .fr{
+    color: black;
+    text-align: center;
+    height: 90px;
+    width: 70px;
+    background: #689BFF;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 0px 5px 5px;
+}
+.be, .mg, .ca, .sr, .ba, .ra{
+    color: black;
+    text-align: center;
+    height: 90px;
+    width: 70px;
+    background: #689BFF;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 5px 5px 0px;
+}
+.pink{
+    width: 790px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 300px;
+}
+.sc, .ti, .v, .cr, .mn, .fe, .co, .ni, .cu, .zn, .y, .zr, .nb, .mo, .tc, .ru, .rh, .pd, .ag, .cd, .lu, .hf, .ta, .w, .re, .os, .ir, .pt, .au, .hg, .lr, .rf, .db, .sg, .bh, .hs, .mt, .ds, .rg, .cn{
+    color: black;
+    height: 90px;
+    width: 70px;
+    background: #FD9A98;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 5px 5px 0px;
+    text-align: center;
+}
+.orange{
+    width: 393px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 100px;
+}
+.c3{
+    display: inline-block;
+    vertical-align: top;
+    width:80px;
+} 
+.b, .c, .n, .o, .f, .al, .si, .p, .s, .cl, .ga, .ge, .as, .se, .br, .in, .sn, .sb, .te, .i, .tI, .pb, .bi, .po, .at, .uut, .fi, .uup, .lv, .uus{
+    color: black;
+    height: 90px;
+    width: 70px;
+    background: #FECB00;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 5px 5px 0px;
+    text-align: center;
+}
+.he, .ne, .ar, .kr, .xe, .rn, .uuo{
+    color: black;
+    height: 90px;
+    width: 70px;
+    background: #FECB00;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 5px 5px 0px;
+    text-align: center;
+}
+#green{
+    width: 1330px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left:60px;
+}
+#groupName{
+    display:inline-block;
+    color: red;
+
+}
+.la, .ce, .pr, .nd, .pm, .sm, .eu, .gd, .tb, .dy, .ho, .er, .tm, .yb, .ac, .th, .pa, .u, .np, .pu, .am, .cm, .bk, .cf, .es, .fm, .md, .no{
+    color: black;
+    height: 90px;
+    width: 70px;
+    background: #1FCA21;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 5px 5px 0px;
+    text-align: center;
+} 
+.blank{
+    color: red;
+    background: #EEEEEE;
+    height: 90px;
+    width: 70px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 5px 5px 0px;
+    text-align: right;
+}

@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: #DDDFD4;
+    padding: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     width: 1300px; 
+}
+#header{
+    background: #38B0AD;
+    padding: 30px;
+}
+#header h1{
+    display: inline-block;
+    color: black;
+    vertical-align: top;
+    padding: 10px 20px 10px 10px;
+    font-weight: 30px;
+}
+.websites{
+    display: inline-block;
+    vertical-align: top;
+    padding: 25px;
+    margin-left: 300px;
+}
+#centerBody{
+    background: #FBE691;
+    padding: 30px;
+    margin: 30px 0px;
+}
+.sideBar{
+    display: inline-block;
+    position: absolute;
+    background: #153F43;
+    padding: 20px;
+    margin: 5px;	
+    color: #DDDFD4;
+    width: 280px;
+}
+.block1, .block2, .block3, .block4, .block5, .block6{
+    background: #153F43;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+.blocks1n3{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 350px;
+}
+.block1, .block2, .block3{
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    height: 220px;
+}
+.blocks4n5{
+    display: inline-block;
+    margin-left: 350px;
+}
+.block4, .block5{
+    display: inline-block;
+    vertical-align: top;
+    width: 397px;
+    height: 220px;
+}
+.block6{
+    margin-left: 358px;
+    padding: 20px;
+    width: 820px;
+    height: 110px;
+}
+#footer{
+    background: #38B0AD;
+    padding: 30px;
+    text-align: center;
+}

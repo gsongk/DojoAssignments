@@ -1,39 +1,36 @@
-body, html{
-    background-color: tan;
-    padding: 5px;
-    margin: 5px;
-    height: 100%;
-    width: 1050px;
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 1000px;
+    background: #D5D2AE;
 }
 h1{
-    text-align: center;
     display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding-top: 40px;
+    margin-left: 60px;
+    font-size: 50px;
 }
 img{
-    height: 210px;
-    width: 200px;
-    margin: 15px;
-}
-#logo img{
-    display: inline-block;
-    border:dodgerblue;
-    margin: 10px;
+    width: 150px;
+    padding: 25px;
 }
 .sub1, .sub3, .sub2-1, .sub2-3, .sub3-1, .sub3-3, .sub4-1, .sub4-3{
     border: solid;
     border-width: 5px;
     display: inline-block;
-    /* float: left; */
     margin: 5px;
-    background: skyblue;
+    background: #82B4EE;
 
 }
 .sub2, .sub4, .sub2-2, .sub2-4, .sub3-2, .sub3-4, .sub4-2, .sub4-4{
     border: solid;
     border-width: 5px;
     display: inline-block;
-    /* float: left; */
     margin: 5px;
-    background: pink;
+    background: #F36870;
 
 }

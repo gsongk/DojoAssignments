@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Have the Time?</title>
+        <script type="text/javascript">
+            var hour = 12;
+            var min = 01;
+            var period = "PM";
+
+            function time(){
+                if (min<30 && period =="AM"){
+                    console.log("It's almost ", hour, "in the morning")
+                }
+                else if(min<30){
+                    console.log("It's just after ", hour, "in the evening")
+                }
+                else if (min>30 && period == "AM"){
+                    console.log ("It's amost", hour + 1, " in the morning")
+                }
+                else{
+                    console.log("It's just after ", hour+1, "in the evening")
+                }
+            }
+            function specific(){
+                if (min>25 && min<30){
+                    console.log("To be specific, it is quarter after", hour)
+                }
+                else if (min>30 && min<60){
+                    console.log("To be specific, it is half past", hour)
+                }
+                else if(min<25 && min !=0){
+                    console.log(min, " after", hour)
+                }
+                else{
+                    return;
+                }
+            }
+            function timeFrame(){
+                if(period =="PM" && hour==12){
+                    console.log(" Noon")
+                }
+                else if(period =="PM" && hour<4){
+                    console.log(" in the Afternoon")
+                }
+                else if(period =="AM" && hour==12){
+                    console.log(" Midnight")
+                }
+                else if(period =="AM"){
+                    console.log(" in the morning")
+                }
+                else{
+                    console.log(" at night")
+                }
+            }
+
+            time();
+            specific();
+            timeFrame();
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <title>RangePrint</title>
+        <script type="text/Javascript">
+
+            function printRange(x, y, z){
+                var x;
+                var y;
+                var z;
+
+                console.log("Starts:",x);
+                console.log("Ends with:", y);
+                console.log("Multiplied by:", z);
+
+// Bonus (Only If You Have Time):
+// Make sure it works for negative numbers
+// If the user doesn't pass a skip amount, make it default to 1 (printRange(4, 8); 
+// would print 4, 5, 6, 7)
+// If the user doesn't pass an end point, make it start at 0, and end at the first 
+//(printRange(4); would print 0, 1, 2, 3)
+
+                if (y === undefined && z === undefined){
+                    y = x;
+                    x = 0;
+                    z = 1;
+
+                    for (var i = x; i < y; i++){
+                        if (i % z == 0){
+                        console.log("List:", i);  
+                        }   
+                    }
+                }
+                else if (z === undefined){
+                    z=1;
+
+                   for (var i = x; i < y; i++){
+                        if (i % z == 0){
+                        console.log("List:", i);  
+                        }   
+                    } 
+                }
+                else {
+                    for (var i = x; i < y; i++){
+                        if (i % z == 0){
+                        console.log("List:", i);     
+                        }
+                    }
+                }
+            }
+            printRange(-5, 0);
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

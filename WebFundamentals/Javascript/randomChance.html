@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Random Chance</title>
+    </head>
+    <body>
+    </body>
+         <script type="text/JavaScript">
+            function randCoin(){
+                var coins;
+                var randNum;
+                for (coins = 0; coins<200; coins++){
+                    randNum = Math.floor(Math.random()*199)-99;
+                    coins += randNum;
+                    // console.log(randNum);
+                console.log(coins);
+                }
+            }
+            randCoin();
+        </script>   
+</html>

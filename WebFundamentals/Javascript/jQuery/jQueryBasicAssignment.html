@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery functions</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript">
+        $(document).ready(function(){
+            $(".click").click(function(){
+                alert("Congrats! you clicked the button!");
+            });
+            $(".hide").click(function(){
+                $(".hide").hide();
+            });
+            $(".show").click(function(){
+                $(".hide").show();
+            });
+            $(".toggle").click(function(){
+                $(".hide").toggle();
+            });
+            $(".slideDown").click(function(){
+                $(".hidden").slideDown();
+            });
+            $(".slideUp").click(function(){
+                $("#slideUp").slideUp();
+            });
+            $(".slideToggle").click(function(){
+                $("#slideToggle").slideToggle();
+            });
+            $(".fadeIn").click(function(){
+                $("#fadeIn").fadeIn();
+            });
+            $(".fadeOut").click(function(){
+                $("#fadeOut").fadeOut();
+            });
+            $(".addClass").click(function(){
+                $("#addClass").addClass("green");
+            });
+            $(".before").click(function(){
+                $("#before").before("<h1>Hey!</h1>");
+            });
+            $(".after").click(function(){
+                $("#after").after("<h1>Yo!</h1>");
+            });
+            $(".append").click(function(){
+                $("#append").append("<span>Span Tag</span>");
+            });
+            $(".html").click(function(){
+                $("#html").html("<h1>Sup!</h1>");
+            });
+            $(".attr").click(function(){
+                var classVal=$("#attr").attr("class")
+                $("#attr").append(classVal);
+            });//Attribute
+            $(".attr2").click(function(){
+                $("#attr").attr("class", "green");
+            });
+            $(".val").click(function(){
+                console.log($("#val").val());
+            });
+            $(".val2").click(function(){
+                $("#val").val("Time passes by... ");
+            });
+            $(".text").click(function(){
+                $("#text").text("Sup! ");
+            });
+            var ele =$("#data");
+            $.data(ele,"name","Sally");
+            $(".data").click(function(){
+                var value =$.data(ele,"name");
+                $("#data").after(value);
+            });
+        });
+
+        </script>
+        <style type="text/css">
+        .green{
+            color: green;
+        }
+        body{
+            font-family: cursive;
+        }
+        </style>
+</head>
+<body>
+ <!-- click function -->
+    <fieldset>
+        <legend>Click</legend>
+        <p>Adds a function that occurs when a an element is clicked.</p>
+        <button class="click">Click Me</button>
+    </fieldset>
+<!-- //Hides  -->
+    <fieldset>
+        <legend>Hide</legend>
+        <p>Hides</p>
+        <button class="hide">Click to hide me!</button>
+    </fieldset>
+<!-- //Show -->
+    <fieldset>
+        <legend>Show</legend>
+        <p>Shows</p>
+        <button class="show">Click to show</button>
+    </fieldset>
+<!-- //toggle -->
+    <fieldset>
+        <legend>Toggle</legend>
+        <p>Toggles between show and hide</p>
+        <button class="toggle">Click to toggle</toggle>
+    </fieldset>
+<!-- //slideDown -->
+    <fieldset>
+        <legend>SlideDown</legend>
+        <p>Slide down animation</p>
+        <p class="hidden" hidden>street art freegan elly stumptown</p>
+        <button class="slideDown">Click to show hidden message</button>
+    </fieldset>
+<!-- //slideUp -->
+    <fieldset>
+        <legend>SlideUp</legend>
+        <p>Hides text</p>
+        <p id="slideUp">Boo!!!</p>
+        <button class="slideUp">Click to hide message</button>
+    </fieldset>
+<!-- //slideToggle -->
+    <fieldset>
+        <legend>SlideToggle</legend>
+        <p>Slides up and down</p>
+        <p id="slideToggle">Waidmanns Heil! Flickschusterei und Kastrat frickeln bräsig Jubelperser. Das Aue schlampampen das geflissentlich Edelmut. Der gebeutelt Sättigungsbeilage. Die Thusnelda friemeln die bierernst Promenadenmischung. Schluckspecht und Schuhwichse abkupfern fidel Franzosenkrankheit. Das Falscher Hase stagnieren die adrett Herrengedeck. Unsitte und Groschengrab anschwärzen stramm Unsitte. Kleintierzuchtverein und Schluckspecht betören hold Sauerkraut. Der Schenkelbürste flanieren der geflissentlich Hochstapler. Sittenstrolch und Steckenpferd friemeln piesacken Müßiggang. Kastrat und Prahlhans lustwandeln gemach Bagage. Das töricht Franzosenkrankheit festnageln. Das hochnäsig Hausierer gutheißen. Der pfundig Rostbratwurst grämen. Die stramm Herrengedeck. Ei der Daus!</p>
+        <button class="slideToggle">Click</button>
+    </fieldset>
+<!-- //fadeIn -->
+    <fieldset>
+        <legend>FadeIn</legend>
+        <p id="fadeIn" hidden>Fades in!!!</p>
+        <button class="fadeIn">Click to fade in</button>
+    </fieldset>
+<!-- //fadeOut -->
+    <fieldset>
+        <legend>fadeOut</legend>
+        <p id="fadeOut">Fade out</p>
+        <button class="fadeOut">Click to fade out</button>
+    </fieldset>
+<!-- //addClass -->
+    <fieldset>
+        <legend>AddClass</legend>
+        <p id="addClass">This text will turn purple</p>
+        <button class="addClass">Click to add and change text green</button>
+    </fieldset>
+<!-- //before -->
+    <fieldset>
+        <legend>Before</legend>
+        <p>Adds something before</p>
+        <p id="before">Adds before</p>
+        <button class="before">Click to add before p tag</button>
+    </fieldset>
+<!-- //after -->
+    <fieldset>
+        <legend>After</legend>
+        <p id="after">Adds after</p>
+        <button class="after">Click to add after p tag</button>
+    </fieldset>
+<!-- //append -->
+    <fieldset>
+        <legend>Append</legend>
+        <p id="append"> Adds</p>
+        <button class="append">Click to append</button>
+    </fieldset>
+<!-- //html -->
+    <fieldset>
+        <legend>HTML</legend>
+        <p>Replaces the HTML</p>
+        <p id="html">ethical bitters Truffaut seitan lo-fi skateboard ennui iPhone bicycle rights Godard mixtape 8-bit distillery crucifix sriracha Brooklyn pour-over hella Austin Helvetica hashtag leggings actually PBR&B stumptown Wes Anderson Vice biodiesel deep v occupy heirloom cardigan Williamsburg fixie tattooed selfies mumblecore McSweeney's Marfa banjo +1 blog Pitchfork cornhole sustainable letterpress selvage aesthetic lomo swag yr normcore irony YOLO craft beer PBR plaid disrupt Banksy twee semiotics cliche meh tousled gluten-free literally readymade next level flexitarian Odd Future beard kogi church-key Intelligentsia forage hoodie chambray viral direct trade  High Life fanny pack keffiyeh shabby chic flannel American Apparel synth squid pork belly fashion axe gentrify cray pickled butcher put a bird on it organic locavore cred Bushwick wayfarers four loko trust fund Blue Bottle DIY Etsy gastropub try-hard raw denim pug Tonx whatever pop-up retro salvia street art scenester XOXO Cosby sweater polaroid umami quinoa fap Pinterest meggings drinking vinegar authentic paleo narwhal sartorial Neutra Portland brunch Schlitz kitsch dreamcatcher art party before they sold out 3 wolf moon post-ironic photo booth bespoke you probably haven't heard of them food truck Shoreditch vinyl small batch tofu mustache wolf VHS banh mi 90's artisan typewriter Tumblr master cleanse ugh asymmetrical slow-carb messenger bag roof party Echo Park single-origin coffee tote bag Kickstarter farm-to-table chillwave fingerstache Thundercats chia freegan Carles keytar kale chips vegan mlkshk jean shorts</p>
+        <button class="html"> Click to replace</button>
+    </fieldset>
+<!-- //attributes -->
+    <fieldset>
+        <legend>Attr</legend>
+        <p>Retrieves or set an attribute of an element</p>
+        <p class="green" id="attr"> You can change this sentence green and find out what the class is: </p>
+        <button class="attr">Click for class</button>
+        <button class="attr2">Click to change color</button>
+    </fieldset>
+<!-- //value -->
+    <fieldset>
+        <legend>Val</legend>
+        <p>Retrives or set a value of an input</p>
+        <input type="text" name="name" id="val">
+        <button class="val">Click to retrieve value</button>
+        <button class="val2">Click to change value</button>
+    </fieldset>
+<!-- //text -->
+    <fieldset>
+        <legend>Text</legend>
+        <p>Replace the text</p>
+        <p id="text">This will be replaced</p>
+        <button class="text">Click to replace</button>
+    </fieldset>
+<!-- //data -->
+    <fieldset>
+        <legend>Data</legend>
+        <p>Store a data value</p>
+        <p id="data">Click to find hidden message</p>
+        <button class="data">Click for data</button>
+    </fieldset>
+</body>
+</html>

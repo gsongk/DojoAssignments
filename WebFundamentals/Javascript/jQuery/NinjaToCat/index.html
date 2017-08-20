@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head><title>Ninja to Cat</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+         <script type="text/javascript">
+            $(document).ready(function(){
+                $("img").click(function(){
+                    console.log("data-alt-src value is", $(this).attr("data-alt-src"));
+                });
+            }); 
+    </script>
+    <style>
+        body{
+            width: 500px;
+            text-align: center;
+            padding-top: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+    </head>
+    <body>
+        <h1>Cat to Ninja</h1>
+        <br>
+        <br>
+        <img style="width:300px;" src="cat0.png" data-alt-src="ninja0.png" />
+        <img style="width:300px;" src="cat1.png" data-alt-src="ninja1.png" />
+        <img style="width:300px;" src="cat2.png" data-alt-src="ninja2.png" />
+        <img style="width:300px;" src="cat3.png" data-alt-src="ninja3.png" />
+        <img style="width:300px;" src="cat4.png" data-alt-src="ninja4.png" />
+    </body>
+</html>

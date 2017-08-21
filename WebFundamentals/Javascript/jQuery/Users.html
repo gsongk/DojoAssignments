@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Inputting new Users</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("form").submit(function() {
+                console.log($(this).serialize());
+                return false
+            });
+            $("button").click(function() {
+                $("form").submit();
+            });
+        });
+    </script>
+    <style>
+        form {
+            margin: 20px;
+            padding: 10px;
+        }
+        
+        input {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body style="font-family:Cambria, Cochin, Georgia, Times, Times New Roman, serif;">
+    <h1>Add User</h1>
+    <hr>
+    <form action="input_page.php">
+        First Name: <input type="text" name="firstName"></br>
+        Last Name: <input type="text" name="lastName"></br>
+        Email Address: <input type="text" name="email"></br>
+        Contact No.: <input type="number" name="phone"></br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

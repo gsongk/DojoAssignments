@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Hover In and Out</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('img').bind('mouseenter mouseleave', function() {
+                $(this).attr({
+                    src: $(this).attr('data-other-src'),
+                    'data-other-src': $(this).attr('src')
+                })
+            });
+        });
+    </script>
+    <style>
+        img {
+            width: 200px;
+            height: 250px;
+            vertical-align: top;
+            padding: 5px;
+        }
+        
+        div {
+            display: inline-block;
+            border-style: solid;
+            border-width: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body style="width: 900px;">
+    <h1 style="text-align: center;">Hover In/Out</h1>
+    <div id="1">
+        <img src="StruttingOwl.jpg" data-other-src="CatGlasses.jpg">
+    </div>
+
+    <div id="2">
+        <img src="StruttingOwl.jpg" data-other-src="CatInBoots.jpg">
+    </div>
+
+    <div id="3">
+        <img src="StruttingOwl.jpg" data-other-src="CatLitUp.jpg">
+    </div>
+
+    <div id="4">
+        <img src="StruttingOwl.jpg" data-other-src="CatYoga.jpg">
+    </div>
+
+    <div id="2-1">
+        <img src="StruttingOwl.jpg" data-other-src="dogPlush.jpg">
+    </div>
+
+    <div id="2-2">
+        <img src="StruttingOwl.jpg" data-other-src="mailman.jpg">
+    </div>
+
+    <div id="2-3">
+        <img src="StruttingOwl.jpg" data-other-src="melting.jpg">
+    </div>
+
+    <div id="2-4">
+        <img src="StruttingOwl.jpg" data-other-src="owlGlasses.jpg">
+    </div>
+</body>
+
+</html>

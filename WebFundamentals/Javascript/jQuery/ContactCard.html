@@ -2,16 +2,74 @@
 <html>
 
 <head>
-    <title>Title</title>
-    <style>
-
-    </style>
-    <script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <title>Contact Card</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript">
+        $(document).click(function() {
+            $("button").click(function() {
+                var first = $("#first").val();
+                var last = $("#last").val();
+                var desc = $("textarea").val();
+
+                $("#outputCard").append("<div id = 'card'><p>" + first + " " + last + "</p><p id='back'>" + desc + "</p></div>");
+
+                $("#first").val("");
+                $("#last").val("");
+                $("#desc").val("");
+                return false;
+            });
+            $(document).on("click", "#card", function() {
+                $(this).children().toggle();
+            })
+        })
     </script>
+    <style>
+        body {
+            font-family: fantasy;
+            padding: 10px;
+        }
+        
+        #back {
+            display: none;
+        }
+        
+        input,
+        textarea {
+            display: block;
+        }
+        
+        #inputCard,
+        #outputCard {
+            display: inline-block;
+            vertical-align: top;
+            margin: 20px;
+        }
+        
+        #card {
+            width: 150px;
+            height: 75px;
+            text-align: center;
+            border: 1px solid black;
+            margin: 5px 0;
+            padding: 10px;
+        }
+    </style>
+</head>
 
-    <body>
-
-    </body>
+<body>
+    <div id="inputCard">
+        <form>
+            <label for="first">First Name:</label>
+            <input type="text" name="first" id="first"><br>
+            <label for="last">Last Name:</label>
+            <input type="text" name="last" id="last"><br>
+            <label for="desc">Description:</label>
+            <textarea id="desc"></textarea><br>
+            <button>Add User</button>
+        </form>
+    </div>
+    <div id="outputCard">
+    </div>
+</body>
 
 </html>

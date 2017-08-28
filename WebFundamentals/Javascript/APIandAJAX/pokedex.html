@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Build Your Own Pokedex</title>
+
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+    <script>
+        $(document).ready(function() {
+            for (var i = 1; i < 151; i++) {
+                $('#left').append(`<img src="http://pokeapi.co/media/img/${i}.png" id="${i}">`)
+            }
+            $(document).on("click", "img", function() {
+                var id = this.id;
+                $.get("http://pokeapi.co/api/v1/pokemon/" + id, function(res) {
+                    var stats = "";
+                    stats += `<div id="img"><img src="http://pokeapi.co/media/img/${id}.png" id="${id}"></div>`;
+                    stats += "<h4>Name: " + res['name'] + "</h4>";
+                    stats += "<h4>Height: </h4>";
+                    stats += res['height'];
+                    stats += "<h4>Weight: </h4>";
+                    stats += res['weight'];
+                    stats += "<h4>Types: </h4>";
+                    stats += "<ul>";
+                    for (var j = 0; j < res["types"].length; j++) {
+                        stats += "<li>" + res["types"][j]["name"] + "</li>"
+                    }
+                    stats += "</ul>";
+                    $("right").html(stats);
+                });
+            });
+        });
+    </script>
+    <style>
+        #right {
+            border: 10px solid red;
+            width: 28%;
+            box-sizing: border-box;
+            height: 500px;
+            padding: 20px;
+            float: left;
+        }
+        
+        #left {
+            width: 70%;
+            box-sizing: content-box;
+            margin-right: 1%;
+            float: left;
+        }
+        
+        #img {
+            width: 30%;
+            box-sizing: border-box;
+            border: 10px solid red;
+            height: 110px;
+            margin: 10px auto;
+            padding: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align:center;">Pokedex</h1>
+    <br>
+    <br>
+    <div id="left"></div>
+    <div id="right">
+        <div id="img"></div>
+    </div>
+</body>
+
+</html>

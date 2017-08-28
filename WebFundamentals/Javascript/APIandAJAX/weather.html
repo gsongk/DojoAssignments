@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Weather Forecast</title>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script>
+        $(document).ready(function() {
+            $('form').submit(function() {
+                // your code here (build up your url)
+                var key = "d1e6a97cdd4413f9f6e3393e7bf34999";
+                var city_name = $("input#city").val();
+                $.get(`http://api.openweathermap.org/data/2.5/weather?q=${city_name}&units=imperial&appid=${key}`, function(res) {
+                    console.log(res);
+                    // your code here
+                    var html = ``;
+                    html += `<p> ${res['name']}: ${res['weather'][0]['description']} </p>`;
+                    html += `<p> Temperature:${res['main']['temp']} F</p>`;
+                    html += `<p> Coord: ${res['coord'].lat}, ${res['coord'].lon}`
+                    $("#forecast").html(html);
+                }, 'jsonp');
+                return false;
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div id="weather">
+        <h1>Weather Forecast</h1>
+        <form>
+            <label for='city'>City:
+                    <input type='text' name='city' id='city'/>
+                </label>
+            <input type='submit' name='submit' />
+        </form>
+        <div id="forecast"></div>
+    </div>
+</body>
+
+</html>

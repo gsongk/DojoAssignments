@@ -1,0 +1,18 @@
+#main {
+    background: #ddd;
+    border: 1px solid #999;
+    padding: 20px;
+    margin: auto;
+    width: 90%;
+}
+
+
+/*convert these font sizes to ems*/
+
+.large {
+    font-size: 4em;
+}
+
+.medium {
+    font-size: 3em;
+}

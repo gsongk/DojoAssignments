@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <script>
+        var array = [-1, -1, -2, -5, 7, 9];
+        var count = 0;
+
+        function countPositives() {
+            for (var i = 0; i < array.length; i++) {
+                if (array[i] < 0) {
+                    count++;
+                }
+            }
+            var last = array.length - 1;
+            array[last] = count;
+            console.log(array);
+        }
+        countPositives();
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

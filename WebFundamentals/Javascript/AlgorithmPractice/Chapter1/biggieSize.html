@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <script>
+        var array = [-1, -3, 4, 5, -10];
+        var low = 0;
+        var high = 0;
+
+        for (var i = 0; i < array.length; i++) {
+            if (array[i] > high) {
+                high = array[i];
+            }
+            if (array[i] < low) {
+                low = array[i];
+            }
+        }
+        console.log("High:" + high + " Low: " + low);
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

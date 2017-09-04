@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Date</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $(function() {
+                $("#date").datepicker();
+                $("#date2").datepicker();
+                $("<input>").is()
+                $(".widget input[type=submit], .widget a, .widget button").button();
+                $("button").click(function(event) {
+                    event.preventDefault();
+                    input(name, date, date2);
+                });
+            });
+
+            function input(name, date, date2) {
+                if (name == "") {
+                    alert("Thanks " + name + " Your Cruise leaves on " + date + " and returns on " + date2 + " !");
+                } else {
+                    $("div1")
+                        .text("Your name can't be blank!")
+                        .css("color", "red")
+                        .css("background-color", "red")
+                }
+            }
+        });
+    </script>
+    <style>
+        button {
+            background-color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Welcome to Codingdojo plan a Cruise!</h1>
+    <p>From: <input type="text" id="date"></p>
+    <br><br><br><br><br><br><br><br>
+    <p>To: <input type="text" id="date2"></p>
+    <br><br><br><br><br><br><br><br>
+    <p> Name: <input type="text" id="name"></p>
+    <button>Check Dates!</button>
+    <div id="div1"></div>
+</body>
+
+</html>

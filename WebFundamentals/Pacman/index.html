@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pacman</title>
+    <link rel="stylesheet" type="text/css" href="pacman.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="world"></div>
+        <div id="mario"></div>
+        <div id="score"></div>
+        <div id="bowser"></div>
+        <div id="amino"></div>
+    </div>
+    <script>
+        // Maze
+        //2 = Brick
+        //1 = Coins or Mushrooms
+        //0 = blank space
+        var world = [
+            [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+            [2, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2],
+            [2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 1, 2, 2, 2, 1, 2, 1, 2],
+            [2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1, 2],
+            [2, 1, 2, 2, 2, 2, 1, 2, 1, 2, 2, 1, 2, 1, 2, 1, 2, 2, 2, 1, 1, 1, 2],
+            [2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2],
+            [2, 1, 2, 1, 2, 2, 2, 2, 1, 2, 2, 1, 2, 1, 2, 1, 2, 2, 2, 1, 2, 1, 2],
+            [2, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 2, 1, 2],
+            [2, 1, 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 0, 0, 0, 2, 2, 2, 2, 1, 1, 1, 2],
+            [2, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 2, 0, 0, 0, 2, 1, 1, 1, 1, 2, 1, 2],
+            [2, 1, 1, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 1, 2],
+            [2, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1, 2],
+            [2, 1, 2, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 1, 2, 1, 2, 2, 2, 1, 1, 1, 2],
+            [2, 1, 2, 1, 2, 1, 2, 1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2],
+            [2, 1, 2, 1, 2, 1, 2, 1, 2, 2, 2, 2, 2, 1, 2, 1, 2, 2, 2, 1, 2, 1, 2],
+            [2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2],
+            [2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 2, 2, 1, 2, 1, 2],
+            [2, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2],
+            [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+        ];
+        var score = 0;
+        var mario = {
+            x: 20,
+            y: 20
+        };
+        var bowser = {
+            x: 260,
+            y: 180
+        };
+        var amino = {
+            x: 240,
+            y: 180
+        };
+
+        function displayWorld() {
+            var output = '';
+            for (var i = 0; i < world.length; i++) {
+                output += "\n<div class='row'>\n";
+                for (var j = 0; j < world[i].length; j++) {
+                    if (world[i][j] == 2) {
+                        output += "<div class='brick'></div>";
+                    } else if (world[i][j] == 1) { // Output Coins
+                        output += "<div class='coin'></div>";
+                    }
+                    if (world[i][j] == 0) { // Output Empty
+                        output += "<div class='empty'></div>";
+                    }
+                    if (world[i][j] == 3) { //Output Luigi
+                        output += "<div id='luigi'></div>";
+                    }
+                    // output = output + world[i][j];
+
+                }
+                output += "</div>";
+            }
+            document.getElementById('world').innerHTML = output;
+        }
+        //dispays Mario, Bowser and Score
+        function displayMario() {
+            document.getElementById('mario').style.top = mario.y + "px";
+            document.getElementById('mario').style.left = mario.x + "px";
+        }
+
+        function displayBowser() {
+            document.getElementById('bowser').style.top = bowser.y + "px";
+            document.getElementById('bowser').style.left = bowser.x + "px";
+        }
+
+        function displayAmino() {
+            document.getElementById('amino').style.top = amino.y + "px";
+            document.getElementById('amino').style.left = amino.x + "px";
+        }
+
+        function displayScore() {
+            document.getElementById('score').innerHTML = score;
+        }
+
+        displayWorld();
+        displayMario();
+        displayScore();
+        displayBowser();
+        displayAmino();
+
+        // alert([mario.y] + " " + [mario.x]);
+        document.onkeydown = function(e) {
+            if (e.keyCode == 37 && world[mario.y / 20][mario.x / 20 - 1] != 2) { //left
+                mario.x -= 20;
+            } else if (e.keyCode == 39 && world[mario.y / 20][mario.x / 20 + 1] != 2) { //Right
+                mario.x += 20;
+            } else if (e.keyCode == 38 && world[mario.y / 20 - 1][mario.x / 20] != 2) { //Up
+                mario.y -= 20;
+            } else if (e.keyCode == 40 && world[mario.y / 20 + 1][mario.x / 20] != 2) { //Down 
+                mario.y += 20;
+            }
+            // When Mario is on top of the coin, it is supposed to disapear
+            if (world[mario.y / 20][mario.x / 20] == 1) {
+                world[mario.y / 20][mario.x / 20] = 0;
+                score += 10;
+                displayWorld();
+                displayScore();
+            } else if (world[mario.y / 20][mario.x / 20] == 3) {
+                world[mario.y / 20][mario.x / 20] = 0;
+                score += 500;
+                displayWorld();
+                displayScore();
+            }
+            if (world[mario.y / 20][mario.x / 20] == bowser) {
+                //If mario touches bowser, he loses points
+                score -= 50;
+                displayWorld();
+                displayScore();
+            }
+
+            console.log(e.keyCode);
+            displayMario();
+        }
+    </script>
+</body>
+
+</html>

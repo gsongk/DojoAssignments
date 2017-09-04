@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sortable Ninja</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $("#sortable").sortable();
+            $("#sortable").disableSelection();
+        });
+    </script>
+    <style>
+        #sortable {
+            vertical-align: top;
+            display: inline-block;
+            width: 30%;
+            height: 15%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="sortable">
+        <img src="sort1.png" alt="sort1">
+        <img src="sort2.png" alt="sort2">
+        <img src="sort3.png" alt="sort3">
+        <img src="sort4.png" alt="sort4">
+        <img src="sort5.png" alt="sort5">
+    </div>
+</body>
+
+</html>

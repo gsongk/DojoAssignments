@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <script>
+        var fDegrees;
+        var cDegrees;
+
+        // function FtoC(fDegrees) {
+        //     cDegrees = (fDegrees - 32) * 5 / 9;
+        //     console.log("F: " + fDegrees)
+        //     console.log(cDegrees);
+        // }
+
+        function CtoF() {
+
+            // fDegrees = (9 / 5 * cDegrees) + 32;
+            // cDegrees = (fDegrees - 32) * 5 / 9;
+            // console.log("C: " + cDegrees)
+            // console.log(fDegrees);
+
+            for (cDegrees = 200; cDegrees > -200; cDegrees--) { //Loop to check to see if C and F are similar
+                fDegrees = (9 / 5 * cDegrees) + 32;
+                cDegrees = (fDegrees - 32) * 5 / 9;
+
+                console.log("C: " + cDegrees + " F: " + fDegrees);
+                if (fDegrees === cDegrees) {
+                    console.log("It's the Same!")
+                }
+            }
+        }
+        // FtoC(32);
+        CtoF();
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

@@ -12,3 +12,6 @@ my_dict.items()
 [(v,k) for k, v in my_dict.iteritems()]
 
 print my_dict
+
+# K - is key -> Jay
+# V - is Value -> Phone number

@@ -8,25 +8,27 @@ def odd_even():
         if i%2 !=0:
             print "Nubmer is: ", i, "This is an even number."
 # odd_even()
-
+##################################################################
 # Multiply:
 a = [2,4,10,16]
 
-def multiply():
-    for i in range (0, len(a)):
-        b = a[i]*5
-        print b
-# multiply()
+def multiply(arr, num):
+    newList = []
+    for x in arr:
+        newList.append(x*num)
+        return newList
+# print multiply(a, 5)
 
+##########################################################################
 # Hack Challenge
 
-x = ([2,4,5],3)
+def layered_multiples(arr):
+    new_array = []
+    for x in arr:
+        val_arr = []
+        for i in range(0,x):
+            val_arr.append(1)
+            new_array.append(val_arr)
+    return new_array
+x = layered_multiples(multiply([2,4,5],3))
 print x
-
-def layered_multiples():
-    for i in range (0, len(x)):
-        new_array = []
-        new_array = str(1) * x[0]
-        print new_array
-
-layered_multiples()

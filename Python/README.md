@@ -1,0 +1,2 @@
+"# Grace-Kim" 
+Studied and graduated with a English Degree. Wanted a new challenge and career. Went to coding dojo due to recommendations from friends. I am excited to learn about python. I am looking forward to continuing to increase my knowledge in programming. I have had prior programming knowledge due to high school, and college. I took basic classes but was not able to get into it fully. Being able to jump into it now, I am excited. 

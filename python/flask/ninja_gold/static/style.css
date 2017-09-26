@@ -1,0 +1,23 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+
+#farm,
+#cave,
+#house,
+#casino {
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    background-color: yellow;
+}
+
+input {
+    background-color: yellowgreen;
+}
+
+p {
+    padding: 10px;
+}

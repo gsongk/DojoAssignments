@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ninja Gold</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <p> Your Gold: {{session['your_gold']}}</p>
+    <div id='body'>
+        <div id='farm'>
+            <fieldset>
+                <h3>Farm</h3>
+                (earns 10-20 golds)
+                <br><br>
+                <form action="/process_money" method="post">
+                    <input type="hidden" name="building" value="farm" />
+                    <input type="submit" value="Find Gold!" />
+                </form>
+            </fieldset>
+        </div>
+
+        <div id='cave'>
+            <fieldset>
+                <h3>Cave</h3>
+                (earns 5-10 golds)
+                <br><br>
+                <form action="/process_money" method="post">
+                    <input type="hidden" name="building" value="cave" />
+                    <input type="submit" value="Find Gold!" />
+                </form>
+            </fieldset>
+        </div>
+        <div id='house'>
+            <fieldset>
+                <h3>House</h3>
+                (earns 2-5 golds)
+                <br><br>
+                <form action="/process_money" method="post">
+                    <input type="hidden" name="building" value="house" />
+                    <input type="submit" value="Find Gold!" />
+                </form>
+            </fieldset>
+        </div>
+        <div id='casino'>
+            <fieldset>
+                <h3>Casino</h3>
+                (earns/takes 0-50 golds)
+                <br><br>
+                <form action="/process_money" method="post">
+                    <input type="hidden" name="building" value="casino" />
+                    <input type="submit" value="Find Gold!" />
+                </form>
+            </fieldset>
+        </div>
+    </div>
+    <p>Activities:</p>
+    <div id='activities'>
+        <fieldset>
+            {% for activities in session['activities']%}
+            <p>{{activities}}</p> {%endfor%}<br>
+        </fieldset>
+    </div>
+    <p><a href='/process_money'>Reset</a></p>
+</body>
+
+</html>

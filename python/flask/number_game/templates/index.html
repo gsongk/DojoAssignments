@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Great Number Game</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+
+    <h1>Number Game!</h1>
+    <p>Pick between 1 and 100</p>
+    <!-- {{session['guesses']}}  -->
+    {% for message in messages %}
+    <p id='flash'>{{ message }}</p>
+    {% endfor %}
+
+    <form action="/guesses" method="POST">
+        <input type="text" name="guess" min='1' max='100'>
+        <input type="submit" value="Submit">
+    </form>
+    <a href="/reset">Reset Game!!</a>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>Dojo Survey with Validation</title>
+</head>
+
+<body>
+    <h1>Index Page</h1>
+    <h3>Dojo Survey</h3>
+    <!-- read on to learn about form actions, we'll talk about the method in a later section -->
+    {% with messages = get_flashed_messages() %} {% for message in messages %}
+    <p>{{messages}}</p>
+    {% endfor %} {% endwith %}
+    <form action="/users" method="POST">
+        <fieldset>
+            Name: <input type="text" name="name">
+            <br><br> Dojo Location: <select name="location">
+            <option value="Silicon Valley">Silicon Valley</option>
+            <option value="Seattle">Seattle</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="Dallas">Dallas</option></select>
+
+            <br><br>Favorite Language: <select name="language">
+            <option value="SQL">SQL</option>
+            <option value="Java">Java</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="C#">C#</option>
+            <option value="C++">C++</option>
+            <option value="Python">Python</option>
+            <option value="PHP">PHP</option>
+            <option value="Ruby">Ruby</option></select>
+
+            <br><br>Comment: <br><textarea value="textbox" rows="4" cols="50" name="comment"></textarea>
+
+            <br><input type="submit" value="create user">
+            <br><br><a href='/reset'>Reset</a>
+        </fieldset>
+    </form>
+</body>
+
+</html>

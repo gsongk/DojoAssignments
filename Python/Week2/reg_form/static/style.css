@@ -1,0 +1,14 @@
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.sucess {
+    color: green;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+input {
+    display: block;
+}

@@ -1,0 +1,12 @@
+MySQL Connection Errors:
+sqlalchemy.exc.OperationalError: (_mysql_exceptions.OperationalError) (1049, "Unknown database 'mydb'
+")
+Database was no created, hence error. All that was needed was to create a database
+
+sqlalchemy.exc.OperationalError: (_mysql_exceptions.OperationalError) (2003, "Can't connect to MySQL server on '127.0.0.1' (10061)")
+Error was due to port being set at 3306, and not at 3307
+
+  File "C:\Users\gsong\Desktop\Dojo\Python\Week4\flask_mysql\mysqlconnection.py", line 11, in __init__
+    'password': self.config.password,
+AttributeError: 'MySQLConnection' object has no attribute 'config'
+Couldn't recognize the password. 

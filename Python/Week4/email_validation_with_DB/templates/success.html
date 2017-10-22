@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Success Page</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}" />
+    <style>
+        * {
+            padding: 3px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Emails:</h1>
+    <div id="success">
+        {% with messages = get_flashed_messages() %}
+        <p>{{ messages[0] }} Valid Email</p>
+        {% endwith %}
+    </div>
+    <br>
+    <h3>Emails entered:</h3>
+    {% for email in emails: %}
+    <p>ID: {{email['id']}} Email: {{ email['email'] }}----------- Time Added: {{ email['created_at'] }} </p>
+    {% endfor %}
+
+    <form action='/'>
+        <input type="submit" value="Return" />
+    </form>
+
+</body>
+
+
+</html>

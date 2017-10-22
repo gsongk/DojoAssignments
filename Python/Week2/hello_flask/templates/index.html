@@ -14,6 +14,11 @@
     {% for x in range(0,times): %}
     <p>{{ phrase }}</p>
     {% endfor %}
+
+    <h2>success</h2>
+    <form action='/success' method='POST'>
+        <input type="submit" value="Submit">
+    </form>
 </body>
 
 </html>

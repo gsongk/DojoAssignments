@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}" />
 </head>
 
 <body>
     <h1>Users:</h1>
-    {%for list in mydb: %}
+    {% with messages = get_flashed_messages(with_categories=true) %} {% if messages %} {% for category, message in messages %}
+    <div>{{ message }}</div>
+    {% endfor %} {% endif %} {% endwith %}
     <table>
         <tr>
             <th>First Name:</th>
@@ -19,15 +22,19 @@
             <th>Password:</th>
             <th>Created:</th>
         </tr>
-        <td>{{mydb['first_name']}}</td>
-        <td>{{mydb['last_name']}}</td>
-        <td>{{mydb['email']}}</td>
-        <td>{{mydb['pw_hash']}}</td>
-        <td>{{mydb['created_at']}}</td>
+        {%for user in mydb: %}
+        <tr>
+            <td>{{user['first_name']}}</td>
+            <td>{{user['last_name']}}</td>
+            <td>{{user['email']}}</td>
+            <td>{{user['pw_hash']}}</td>
+            <td>{{user['created_at']}}</td>
+        </tr>
+        {%endfor%}
     </table>
-    {%endfor%}
     <hr><br>
     <a href="/new">Add a new user</a>
+    <a href="/login">Login</a>
 </body>
 
 </html>

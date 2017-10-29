@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <h1>Edit Friend: </h1>
+
+    {% with messages = get_flashed_messages(with_categories=true) %} {% if messages %} {% for category, message in messages %}
+    <div>{{ message }}</div>
+    {% endfor %} {% endif %} {% endwith %}
+
+
+    <form action="/friends/{{fullfriends.id}}" method='POST'>
+        First Name: <input type="text" name="first_name" value="{{fullfriends.first_name}}">
+        <br>Last Name: <input type="text" name="last_name" value="{{fullfriends.last_name}}">
+        <br>Email: <input type="text" name="email" value="{{fullfriends.email}}">
+        <br><input type="submit" value="Edit Friend">
+    </form>
+</body>
+
+</html>

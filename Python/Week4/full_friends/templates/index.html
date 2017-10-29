@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Full Friend List</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}" />
+</head>
+
+<body>
+    <h1 style="text-align: center;">Full Friends</h1>
+
+    <table>
+        <tr>
+            <th>First Name:</th>
+            <th>Last Name:</th>
+            <th>Email:</th>
+            <th>Friend Created:</th>
+            <th>Actions:</th>
+        </tr>
+        <tr>
+            {%for friend in fullfriends: %}
+            <td>{{friend['first_name']}}</td>
+            <td>{{friend['last_name']}}</td>
+            <td>{{friend['email']}}</td>
+            <td>{{friend['created_at']}}</td>
+            <td>
+                <form action="/friends/{{friend['id']}}/edit" method='GET'>
+                    <input type="submit" value="EDIT">
+                </form>
+                <form action="/friends/{{friend['id']}}/delete" method='POST'>
+                    <input type="submit" value="DELETE">
+                </form>
+
+        </tr>
+        </td>
+        {%endfor%}
+    </table>
+
+    <br>
+    <hr> {% with messages = get_flashed_messages(with_categories=true) %} {% if messages %} {% for category, message in messages %}
+    <div>{{ message }}</div>
+    {% endfor %} {% endif %} {% endwith %}
+
+    <h4>Create a Friend:</h4>
+    <form action='/friends' method='POST'>
+        First Name: <input type="text" name="first_name" />
+        <br> Last Name: <input type="text" name="last_name" />
+        <br> Email: <input type="text" name="email" />
+        <br>
+        <input type="submit" value="Enter" />
+    </form>
+</body>
+
+</html>

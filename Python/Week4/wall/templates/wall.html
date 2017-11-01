@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}" />
+    <title>Document</title>
+</head>
+
+<body id="messageBoard">
+    {% with messages = get_flashed_messages(with_categories=true) %} {% if messages %} {% for category, message in messages %}
+    <div>{{ message }}</div>
+    {% endfor %} {% endif %} {% endwith %}
+
+    <div id="head">
+        <div class="block1">
+            CodingDojo Wall
+        </div>
+        <div class="block2">
+            Welcome {{user.first_name}} <a href="/logout">Log Off</a>
+        </div>
+    </div>
+    <hr>
+
+    <div id="textbox">
+        Post a message
+        <form action="/messageupdate" method="post">
+            <textarea class="box" name="messagebox" id="messagebox" cols="100" rows="5"></textarea>
+            <br><input id="messagebutton" type="submit" value="Post a message">
+        </form>
+
+
+        {% for message in messages %}
+        <div id="list"><span>{{message.first_name}} {{message.last_name}}</span>
+            <i>{{message.updated_at}}</i>
+            <br>{{message.message}}
+            <br> {% if user.id == message.user_id %}
+            <form action="/{{message.message_id}}/delete_message" method="post">
+                <input id="deletebutton" type="submit" value="Delete Message">
+            </form>
+            {% endif %}
+        </div>
+
+        {% for comment in comments %} {% if message.message_id == comment.message_id %}
+        <div id="comm"> <span>{{comment.first_name}} {{comment.last_name}}</span>
+            <i>{{comment.comment_updated_at}}</i>
+            <br>{{comment.comment}}
+        </div>
+        {% endif %} {% endfor %}
+        <br><br> Post a comment
+        <form action="/{{message.message_id}}/comment_update" method="post">
+            <textarea class="box" name="commentbox" id="commentbox" cols="100" rows="5"></textarea>
+            <br><input id="commentbutton" type="submit" value="Post a comment">
+        </form>
+        {% endfor %}
+
+
+
+
+    </div>
+</body>
+
+</html>

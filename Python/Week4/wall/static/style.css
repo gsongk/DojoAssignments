@@ -1,0 +1,82 @@
+#messageBoard {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#head {
+    vertical-align: top;
+}
+
+.block1 {
+    vertical-align: top;
+    display: inline-block;
+    padding: 5px;
+}
+
+.block2 {
+    display: inline-block;
+    padding: 5px;
+    margin-left: 60%;
+}
+
+.box {
+    margin: 20px;
+}
+
+#messagebutton {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    padding: 5px 10px;
+    background-color: blue;
+    color: white;
+    box-shadow: 2px 2px 4px #000000;
+    margin-left: 80%;
+}
+
+#commentbutton {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    padding: 5px 10px;
+    background-color: green;
+    color: white;
+    box-shadow: 2px 2px 4px #000000;
+    margin-left: 80%;
+}
+
+#list {
+    background-color: rgb(180, 237, 255);
+    padding: 8px;
+}
+
+#comm {
+    background-color: rgb(214, 236, 184);
+    margin-left: 25px;
+    font-size: 12px;
+    padding: 5px;
+}
+
+i {
+    font-size: 10px;
+}
+
+span {
+    font-size: 12px;
+}
+
+h6 {
+    margin-left: 80%;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}" />
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Login</h1>
+    {% with messages = get_flashed_messages(with_categories=true) %} {% if messages %} {% for category, message in messages %}
+    <div>{{ message }}</div>
+    {% endfor %} {% endif %} {% endwith %}
+    <br>
+
+    <form action="/logincheck" method="post">
+        <br>Email: <input type="text" name="email">
+        <br>Password: <input type="text" name="pw">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br><br>
+    <a href="/create">Create a New User</a>
+
+</body>
+
+</html>

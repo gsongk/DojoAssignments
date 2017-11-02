@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Details: #{{user['id']}}</h1>
+
+    <h2><strong>Full Name:</strong> {{user['full_name']}}</h2>
+    <h2><strong>Email:</strong> {{user['email']}}</h2>
+    <h2><strong>Created at:</strong> {{user['created_at']}}</h2>
+    <a href="/users/{{user.id}}/edit">Edit</a> |
+    <a href="/users/{{user.id}}/delete">Delete</a>
+</body>
+
+</html>

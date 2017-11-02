@@ -1,25 +1,48 @@
 # Assignment: Product
-# The owner of a store wants a program to track products. Create a product class to fill the following requirements.
 
-# Product Class:
-# Attributes:
+class product(object):
+    def __init__(self, price, name, weight, brand):
+        self.price = price
+        self.name = name
+        self.weight = weight
+        self.brand = brand
+        self.status = 'For Sale'
+        self.tax = 0.15
+    
+    def sold(self):
+        self.status = 'Sold!'
+        self.price = self.price + (self.price * self.tax)
+        return self
+    
+    def returnDefective(self, reason):
+        self.reason = reason
+        self.status = 'Broken: '
+        self.status = str(self.status + ' ' + self.reason)
+        self.price = 0
+        return self
 
-# • Price
+    def returnItems(self):
+        self.discount = 0.20
+        self.price = self.price - (self.price * self.discount)
+        self.status = 'For Sale'
+        return self
+    
+    def display(self):
+        print 'Name: ' + str(self.name)
+        print 'Brand: ' + str(self.brand)
+        print 'Weight: ' + str(self.weight) + ' LBS'
+        print 'Total Price: $' + str(self.price)
+        print 'Status: ' + self.status
+        return self
 
-# • Item Name
+cellphone = product(1000, 'Universe', 1, 'Samsung' )
+cellphone.sold()
+cellphone.returnItems()
+cellphone.sold()
+cellphone.returnItems()
+cellphone.returnDefective('Screen')
+cellphone.display()
 
-# • Weight
-
-# • Brand
-
-# • Status: default "for sale"
-# Methods:
-
-# • Sell: changes status to "sold"
-
-# • Add tax: takes tax as a decimal amount as a parameter and returns the price of the item including sales tax
-
-# • Return: takes reason for return as a parameter and changes status accordingly. If the item is being returned because it is defective change status to defective and change price to 0. If it is being returned in the box, like new mark it as for sale. If the box has been opened set status to used and apply a 20% discount.
-
-# • Display Info: show all product details.
-# Every method that doesn't have to return something should return self so methods can be chained.
+coke = product(1, 'Coke', 1, 'Coke')
+coke.sold()
+coke.display()

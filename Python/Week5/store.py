@@ -1,21 +1,71 @@
 # Optional Assignment: Store
-# Now, let's build a store to contain our products by making a store class and 
-# putting our products into an array.
+# This is my products
 
-# Store class:
-# Attributes:
+#Still Working on this one! 
+class product(object):
+    def __init__(self, price, name, weight, brand):
+        self.price = price
+        self.name = name
+        self.weight = weight
+        self.brand = brand
+        self.status = 'For Sale'
+        self.tax = 0.15
 
-# • products: an array of products objects
+    def sold(self):
+        self.status = 'Sold!'
+        self.price = self.price + (self.price * self.tax)
+        return self
 
-# • location: store address
+    def returnDefective(self, reason):
+        self.reason = reason
+        self.status = 'Broken: '
+        self.status = str(self.status + ' ' + self.reason)
+        self.price = 0
+        return self
 
-# • owner: store owner's name
-# Methods:
+    def returnItems(self):
+        self.discount = 0.20
+        self.price = self.price - (self.price * self.discount)
+        self.status = 'For Sale'
+        return self
 
-# • add_product: add a product to the store's product list
+    def display(self):
+        print 'Name: ' + str(self.name)
+        print 'Brand: ' + str(self.brand)
+        print 'Weight: ' + str(self.weight) + ' LBS'
+        print 'Total Price: $' + str(self.price)
+        print 'Status: ' + self.status
+        return self
 
-# • remove_product: should remove a product according to the product name
+# This is the store
+class store(object):
+    def __init__(self, location, owner):
+        self.products= []
+        self.location = location
+        self.owner = owner
 
-# • inventory: print relevant information about each product in the store
-# You should be able to test your classes by instantiating new objects of 
-# each class and using the outlined methods to demonstrate that they work.
+    def addproduct(self, newproduct):
+        self.products.append(newproduct)
+        print newproduct
+        return self
+
+    def rmproduct(self, newproduct):
+        self.products.pop(newproduct)
+        return self
+
+    def inventory(self):
+        count = 0
+        for product in self.products:
+            count +=1
+            print 'Product', count
+            product.display()
+        return self
+
+# Products
+cellphone = product(1000, 'Universe', 1, 'Samsung')
+coke = product(1, 'Coke', 1, 'Coke')
+CandyBar = product(2, 'Butterfingers', 1, 'Nestle')
+
+# Store
+taylors = store('SLC', 'Pumpkin')
+taylors.addproduct(cellphone).addproduct(coke)

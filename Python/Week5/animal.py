@@ -1,45 +1,55 @@
 # Assignment: Animal
-# Create an Animal class and give it the below attributes and methods. Extend the Animal class to two child classes, Dog and Dragon.
+# Create an Animal class and give it the below attributes and methods. 
+# Extend the Animal class to two child classes, Dog and Dragon.
 
-# Objective
-# The objective of this assignment is to help you understand inheritance. Remember that a class is more than just a collection of properties
-#  and methods. If you want to create a new class with attributes and methods that are already defined in another class, you can have this new class inherit from that other class (called the parent) instead of copying and pasting code from the original class. Child classes can access all the attributes and methods of a parent class AND have new attributes and methods of its own, for child instances to call. As we see with Wizard / Ninja / Samurai(that are each descended from Human), we can have numerous unique child classes that inherit from the same parent class.
+class animal(object):
+    def __init__ (self, name):
+        self.name = name
+        self.health = 100
 
-# Animal Class
-# Attributes:
+    # actions
+    def walk(self, num):
+        num *=1
+        self.health -= num
+        # print 'Health: {}'.format(self.health)
+        return self
 
-# • name
+    def run(self, num):
+        num *=5
+        self.health -=num
+        # print ' Health: {}'.format(self.health)
+        return self
 
-# • health
-# Methods:
+    def display(self):
+        print 'Animal Name: ' + str(self.name)
+        print 'Animal Health: {}'.format(self.health)
+        return self
 
-# • walk: decreases health by one
+cat = animal('Cat').walk(3).run(2).display()
 
-# • run: health decreases by five
+class dog(animal):
+    def __init(self, name):
+        super(dog, self).__init__(name)
+        self.health = 150
+    
+    def pet(self, num):
+        num *= 5
+        self.health += num
+        return self
 
-# • display health: print to the terminal the animal's health.
-# Create an instance of the Animal, have it walk() three times, run() twice, and finally 
-# displayHealth() to confirm that the health attribute has changed.
+dog1 = dog('Zeus').walk(3).run(2).pet(1).display()
 
-# Dog Class
-# • inherits everything from Animal
-# Attributes:
+class dragon(animal):
+    def __init(self,name):
+        super(dragon, self).__init__(name)
+        self.health = 170
+    
+    def fly(self, num):
+        num *=10
+        self.health -= num
+        return self
 
-# • default health of 150
-# Methods:
+    def display(self):
+        print 'I am a Dragon! Health: {}'.format(self.health)
 
-# • pet: increases health by 5
-# Have the Dog walk() three times, run() twice, pet() once, and have it displayHealth().
-
-# Dragon Class
-# • inherits everything from Animal
-# Attributes:
-
-# • default health of 170
-# Methods:
-
-# • fly: decreases health by 10
-
-# • display health: prints health by calling the parent method and prints "I am a Dragon"
-# Now try creating a new Animal and confirm that it can not call the pet() and fly() methods, and 
-# its displayHealth() is not saying 'this is a dragon!'. Also confirm that your Dog class can not fly().
+dragon1 = dragon('Jim').fly(1).display()

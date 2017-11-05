@@ -40,13 +40,13 @@ class product(object):
 # This is the store
 class store(object):
     def __init__(self, location, owner):
+        # super(store, self).__init__(price, name, weight, brand)
         self.products= []
         self.location = location
         self.owner = owner
 
     def addproduct(self, newproduct):
         self.products.append(newproduct)
-        print newproduct
         return self
 
     def rmproduct(self, newproduct):
@@ -54,10 +54,10 @@ class store(object):
         return self
 
     def inventory(self):
-        count = 0
+        self.count = 0
         for product in self.products:
-            count +=1
-            print 'Product', count
+            self.count +=1
+            print 'Product: ', + self.count
             product.display()
         return self
 
@@ -68,4 +68,4 @@ CandyBar = product(2, 'Butterfingers', 1, 'Nestle')
 
 # Store
 taylors = store('SLC', 'Pumpkin')
-taylors.addproduct(cellphone).addproduct(coke)
+taylors.addproduct(cellphone).addproduct(coke).inventory()

@@ -2,47 +2,66 @@
 # You're creating a program for a call center. Every time a call comes in you need a way to track 
 # that call. One of your program's requirements is to store calls in a queue while callers 
 # wait to speak with a call center employee.
+from datetime import datetime
 
-# You will create two classes. One class should be Call, the other CallCenter.
 
-# Call Class
-# • Create your call class with an init method. Each instance of Call() should have:
-# Attributes:
+class call():
+    def __init__(self, id, cname, cphone, time, reason):
+        self.id = id
+        self.cname = cname
+        self.cphone = cphone
+        self.time = time
+        self.reason = reason
 
-# • unique id
+    def display(self):
+        print 'ID: ' + str(self.id)
+        print 'Name: ' + str(self.cname)
+        print 'Phone Number: ' + str(self.cphone)
+        print 'Time: ' + str(self.time)
+        print 'Reason: ' + str(self.reason)
 
-# • caller name
 
-# • caller phone number
+class callcenter():
+    def __init__(self):
+        self.calls = []
+        self.queue = 0
 
-# • time of call
+    def add(self, call):
+        self.calls.append(call)
+        self.queue += 1
+        return self
 
-# • reason for call
-# Methods:
+    def remove(self, call):
+        self.calls.pop(0)
+        self.queue -= 1
+        return self
 
-# • display: that prints all Call attributes.
-# CallCenter Class
-# • Create your call center class with an init method. Each instance of CallCenter() 
-# should have the following attributes:
-# Attributes:
+    def delete(self, number):
+        for call in self.calls:
+            if call.cphone is number:
+                self.calls.remove(call)
+            self.queue = len(self.calls)
+        return self
 
-# • calls: should be a list of call objects
+    def info(self):
+        for call in self.calls:
+            print "Name: " + call.cname + " Phone: " + call.cphone
+        print  "Calls waiting: " + str(self.queue)
+        return self
 
-# • queue size: should be the length of the call list
-# Methods:
+    def sort_by_time(self):
+        self.calls = sorted(
+            self.calls, key=lambda call: call.time, reverse=True)
 
-# • add: adds a new call to the end of the call list
 
-# • remove: removes the call from the beginning of the list (index 0).
+call1 = call(1, 'Jim', "123-4567", datetime.now(), "ARGH!")
+call2 = call(2, 'Tim', "456-7890",  datetime.now(), "Call me back! It's Urgent")
+call3 = call(3, 'Kim', '789-0123', datetime.now(), 'Monster!')
 
-# • info: prints the name and phone number for each call in the queue as well as the 
-# length of the queue.
-# You should be able to test your code to prove that it works. Remember to build one 
-# piece at a time and test as you go for easier debugging!
+# call1.display()
+# call2.display()
+# call3.display()
 
-# Ninja Level: add a method to call center class that can find and remove a call from the 
-# queue according to the phone number of the caller.
-
-# Hacker Level: If everything is working properly, your queue should be sorted by time, 
-# but what if your calls get out of order? Add a method to the call center class that sorts 
-# the calls in the queue according to time of call in ascending order.
+desperate = callcenter()
+desperate.add(call1).add(call2).add(call3).info()
+desperate.remove(call2).info().delete('123-4567').info()

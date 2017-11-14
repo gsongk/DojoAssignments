@@ -1,0 +1,27 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    padding: 20px;
+    margin: 10px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+fieldset{
+    padding: 20px;
+}
+#submit{
+    padding: 7px;
+    background-color: rgb(77, 77, 235);
+    color: white;
+    font-weight: bold;
+}
+input{
+    width: 100%;
+}
+textarea{
+    width: 100%;
+}
+p{
+    background-color: yellowgreen;
+}

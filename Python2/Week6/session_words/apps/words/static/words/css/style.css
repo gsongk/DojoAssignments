@@ -1,0 +1,25 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.separator{
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    height: 500px;
+    padding: 10px;
+}
+.separator:nth-child(2){
+    border-left: solid 2px black;
+    padding-left: 30px;
+    padding: 10px;
+}
+.form-group{
+    margin: 10px;
+}
+.big{
+    font-size: 2em;
+}
+.word{
+    margin: 0;
+}

@@ -1,0 +1,12 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+p, h3{
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}

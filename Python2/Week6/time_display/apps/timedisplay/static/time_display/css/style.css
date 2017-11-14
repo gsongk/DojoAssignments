@@ -1,0 +1,15 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#box1{
+    text-align: center;
+    padding: 20px;
+    background-color: greenyellow;
+    border: black, 3px;
+}
+#clock{
+    text-align: center;
+    padding: 20px;
+    border: black, 3px;
+}

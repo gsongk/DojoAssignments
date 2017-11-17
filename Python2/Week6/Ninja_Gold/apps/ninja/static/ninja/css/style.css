@@ -1,0 +1,35 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: ghostwhite;
+}
+.buildings {
+    text-align: center;
+}
+form {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    padding: 25px;
+    vertical-align: top;
+    margin: 25px;
+}
+.message-log{
+    min-height: 30px;
+    max-height: 200px;
+    border: 2px solid black;    
+    padding: 5px;
+    overflow-y: scroll;
+}
+    .message-log > p{
+        margin: 5px;
+    }
+.earned {
+    color: green;
+}
+.lost {
+    color: red;
+}

@@ -1,0 +1,10 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#box{
+    border: 1px solid grey;
+    padding: 20px;
+    margin: 10px;
+    font-family: "Courier New", Courier, monospace;
+}

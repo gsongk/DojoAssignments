@@ -1,3 +1,13 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    padding: 10px;
+    margin: 5px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;

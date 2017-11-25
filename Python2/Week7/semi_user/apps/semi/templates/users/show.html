@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% load staticfiles %}
+        <link rel="stylesheet" href="{% static 'semi/css/style.css' %}">
+    </head>
+    <body>
+        <div class="container">
+            <h1>{{ user.id }}</h1>
+            <h3><strong>Full Name: </strong>{{ user.first_name }} {{ user.last_name }}</h3>
+            <h3><strong>Email: </strong>{{ user.email }}</h3>            
+            <h3><strong>Created At: </strong>{{ user.created_at }}</h3>
+            <p><a href="/users/{{ user.id }}/edit">Edit</a> | <a href="/users/{{ user.id }}/destroy">Delete</a></p>
+        </div>
+    </body>
+</html>

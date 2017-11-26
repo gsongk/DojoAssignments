@@ -1,0 +1,11 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    padding: 10px;
+}
+#comment{
+    color: green;
+}

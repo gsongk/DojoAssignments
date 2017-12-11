@@ -1,0 +1,23 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: "Arial Black", Gadget, sans-serif;
+    padding: 30px;
+}
+.mainbox{
+    padding: 20px;
+    margin: 10px;
+}
+.submit{
+    color: white;
+    background-color: blue;
+    box-shadow: 5px 5px 5px #888888;
+    padding: 5px;
+}
+#messagebox{
+    padding: 20px;
+    margin: 10px;
+    background-color: yellowgreen;
+}

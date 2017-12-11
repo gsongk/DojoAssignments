@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'ninja/style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div id="goldbox">
+        Your Gold: {{request.session.total_gold}}
+        <br><br>
+    </div>
+    <form action="/process/farm" method="POST">
+        {% csrf_token %}
+    <div class="box">
+        <h4>Farm</h4>
+        (earns 10-20 golds)
+        <br><br>
+        <input class="button" type="submit" name="farm" value="Find Gold!">
+    </div>
+    </form>
+    <form action="/process/cave" method="POST">
+         {% csrf_token %}
+    <div class="box">
+        <h4>Cave</h4>
+        (earns 5-10 golds)
+        <br><br>
+        <input class="button" type="submit" name="cave" value="Find Gold!">
+    </div>
+    </form>
+    <form action="/process/house" method="POST">
+         {% csrf_token %}
+    <div class="box">
+        <h4>House</h4>
+        (earns 2-5)
+        <br><br>
+        <input class="button" type="submit" name="house" value="Find Gold!">
+    </div>
+    </form>
+    <form action="/process/casino" method="POST">
+         {% csrf_token %}
+    <div class="box">
+        <h4>Casino</h4>
+        (earns/takes 0-50 golds)
+        <br><br>
+        <input class="button" type="submit" name="casino" value="Find Gold!">
+    </div>
+    </form>
+    <br><br>
+    Activities: <br>
+    {% for log in request.session.logs reversed %}
+    {{log.class}} {{log.message}} <br>
+    {% endfor %}
+
+</body>
+</html>

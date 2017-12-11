@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'books/style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    {% if messages %}{% for message in messages %} {{message}}{% endfor %}{% endif %}
+    <h3>Welcome!</h3>
+    
+    <div id="main_reg">
+    <form action="/register" method="POST">
+         {% csrf_token %}
+        <fieldset>
+            <legend>Register: </legend>
+            <div id="register_box">
+            <label for="name">Name: </label><input type="text" name="name"><br>
+            <label for="alias">Alias: </label><input type="text" name="alias"><br>
+            <label for="email">Email: </label><input type="text" name="email"><br><br>
+            <h5>*Password should be at least 8 characters long</h5><br>
+            <label for="password">Password: </label><input type="text" name="password"><br>
+            <label for="password_confirm">Confirm PW: </label><input type="text" name="password_confirm"><br>
+            <input type="submit" value="Register">
+            </div>
+        </fieldset>
+    </form>
+    </div>
+
+    <div id="main_login"
+    <form action="/login" method="POST">
+         {% csrf_token %}
+        <fieldset>
+            <legend>Login: </legend>
+            <div id="login_box">
+            <label for="email">Email: </label><input type="text" name="email"><br>
+            <label for="password">Password: </label><input type="text" name="password"><br>
+            <input type="submit" value="Login">
+            </div>
+    </form>
+    </fieldset>
+    </div>
+
+</body>
+</html>

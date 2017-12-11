@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'books/style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <div id="block1">Welcome, {{users.alias}}</div>
+        <div id="block2"><a href="">Add Book and Review</a> 
+            <a href="">Logout</a></div>
+    </div>
+    
+    <div class="main_body">
+        <h3>Recent Book Reviews:</h3>
+        {% for titles in books %}
+        {{titles.name}}
+        {{titles.stars}}
+        {{titles.review}}
+        {% endfor %}
+    </div>
+
+    <div class="side_bar">
+        <h3>Other books with reviews: </h3>
+
+    </div>
+
+</body>
+</html>

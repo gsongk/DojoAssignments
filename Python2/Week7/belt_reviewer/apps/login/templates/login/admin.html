@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>ID: </th>
+            <th>Name: </th>
+            <th>Alias: </th>
+            <th>Email: </th>
+            <th>Password: </th>
+        </tr>
+        {% for users in User%}
+        <tr>
+            <td>{{users.id}}</td>
+            <td>{{users.full_name}}</td>
+            <td>{{users.alias}}</td>
+            <td>{{users.email}}</td>
+            <td>{{users.password}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+    </body>
+    
+    </html>
+</body>
+</html>

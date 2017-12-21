@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% load staticfiles %}
+        <link rel="stylesheet" type="text/css" href="{% static 'post/style.css' %}">
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1>My Posts</h1>
+        <div id="notes"></div>
+        <form action="/create" method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="content">Add a Note:</label>
+                <textarea rows="5" cols="50" name="content"></textarea>
+                <input type="submit" value="Post It!">
+            </div>
+        </form>
+    </body>
+    <script type="text/javascript" src="{% static 'posts/script.js' %}"></script>
+</html>

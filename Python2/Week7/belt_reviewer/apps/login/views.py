@@ -25,7 +25,24 @@ def login(request):
         return redirect('/')
     request.session['user_id'] = result.id
     messages.success(request, "Successfully logged in!")
-    return HttpResponseRedirect(reverse("books:index"))
+    return HttpResponseRedirect(reverse("review:index"))
+
+def logout(request):
+    for key in request.session.keys():
+        del request.session[key]
+    return redirect('/')
+
+def show(request, user_id):
+    user = User.objects.get(id=user_id)
+    unique_ids = user.reviews_left.all().values("book").distinct()
+    unique_books = []
+    for book in unique_ids:
+        unique_books.append(Book.objects.get(id=book['book']))
+    context = {
+        'user': user,
+        'unique_book_reviews': unique_books
+    }
+    return render(request, 'login/show.html', context)
 
 def admin(request):
     context = {

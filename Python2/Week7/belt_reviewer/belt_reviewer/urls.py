@@ -18,5 +18,5 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^', include('apps.login.urls', namespace='login')),
-    url(r'^books/', include('apps.books.urls', namespace='books'))
+    url(r'^books/', include('apps.books.urls', namespace='review'))
 ]

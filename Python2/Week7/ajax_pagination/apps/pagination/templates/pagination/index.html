@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+          crossorigin="anonymous">
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'pagination/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header id="filters">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input class="search-field" id="name-search" type="text" name="name">
+            </div>
+            <div class="form-group">
+                <label for="from">From Date:</label>
+                <input class="search-field" id="from-search" type="date" name="from">
+            </div>
+            <div class="form-group">
+                <label for="until">To Date:</label>
+                <input class="search-field" id="to-search" type="date" name="until">
+            </div>
+            <nav id="pages">
+            </nav>
+        </header>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</td>
+                    <th>First Name</td>
+                    <th>Last Name</td>
+                    <th>Registered Datetime</td>
+                    <th>Email</td>
+                </tr>
+            </thead>
+            <tbody id='leads'>
+            </tbody>
+        </table>
+    </div>
+    <script type="text/javascript"> window.CSRF_TOKEN = "{{csrf_token}}";</script>
+    <script type="text/javascript" src="{% static 'leads/js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'leads/js/script.js' %}"></script>
+</body>
+</html>

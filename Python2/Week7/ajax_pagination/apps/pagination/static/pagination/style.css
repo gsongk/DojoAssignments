@@ -1,0 +1,14 @@
+nav>a{
+    font-size: 1.3em;
+}
+.page-link{
+    margin-left: 5px;
+    padding-right: 5px;
+    border-right: 1px solid black; 
+}
+.page-link:first-child{
+    margin: 0;
+}
+.page-link:last-child{
+    border: none;
+}

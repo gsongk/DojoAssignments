@@ -1,0 +1,26 @@
+label{
+    width: 20px;
+}
+textarea{
+    display: block;
+}
+#notes{
+}
+.note{
+    vertical-align: top;
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 20px;
+    display: inline-block;
+}
+.note>h3{
+    margin: 0 auto;
+}
+.note>span{
+    display:none;
+}
+.note textarea{
+    margin: 0 auto;
+}

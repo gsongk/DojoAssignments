@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'note/style.css' %}">
+</head>
+<body>
+    <h1>Notes</h1>
+    <hr>
+    <form id='note-form' action="create_note" method="post">
+        {% csrf_token %}
+        <h2>Add a Note</h2>
+        <div class="form-group">
+            <label for="title">Note Title:</label>
+            <input type="text" name="title" placeholder="Insert note title here">
+        </div>
+        <div class="form-group">
+            <label for="content">Note:</label>
+            <textarea id="" name="content" cols="30" rows="10" placeholder="Write your note here"></textarea>
+        </div>
+        <input type="submit" value="Add Note">
+    </form>
+    <h2>All Notes:</h2>
+    <div id="notes"></div>
+    <script type="text/javascript"> window.CSRF_TOKEN = "{{csrf_token}}";</script>
+    <script type="text/javascript" src="{% static 'notes/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'notes/script.js' %}"></script>
+</body>
+</html>

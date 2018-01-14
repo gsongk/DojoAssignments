@@ -1,0 +1,8 @@
+C:\Users\gsong\Desktop\Dojo\csharp\fundamentals\bin\Debug\netcoreapp1.1\fundamentals.deps.json
+C:\Users\gsong\Desktop\Dojo\csharp\fundamentals\bin\Debug\netcoreapp1.1\fundamentals.runtimeconfig.json
+C:\Users\gsong\Desktop\Dojo\csharp\fundamentals\bin\Debug\netcoreapp1.1\fundamentals.runtimeconfig.dev.json
+C:\Users\gsong\Desktop\Dojo\csharp\fundamentals\bin\Debug\netcoreapp1.1\fundamentals.dll
+C:\Users\gsong\Desktop\Dojo\csharp\fundamentals\bin\Debug\netcoreapp1.1\fundamentals.pdb
+C:\Users\gsong\Desktop\Dojo\csharp\fundamentals\obj\Debug\netcoreapp1.1\fundamentals.AssemblyInfo.cs
+C:\Users\gsong\Desktop\Dojo\csharp\fundamentals\obj\Debug\netcoreapp1.1\fundamentals.dll
+C:\Users\gsong\Desktop\Dojo\csharp\fundamentals\obj\Debug\netcoreapp1.1\fundamentals.pdb

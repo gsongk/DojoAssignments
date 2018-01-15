@@ -1,0 +1,8 @@
+C:\Users\gsong\Desktop\Dojo\csharp\basic13\bin\Debug\netcoreapp1.1\basic13.deps.json
+C:\Users\gsong\Desktop\Dojo\csharp\basic13\bin\Debug\netcoreapp1.1\basic13.runtimeconfig.json
+C:\Users\gsong\Desktop\Dojo\csharp\basic13\bin\Debug\netcoreapp1.1\basic13.runtimeconfig.dev.json
+C:\Users\gsong\Desktop\Dojo\csharp\basic13\bin\Debug\netcoreapp1.1\basic13.dll
+C:\Users\gsong\Desktop\Dojo\csharp\basic13\bin\Debug\netcoreapp1.1\basic13.pdb
+C:\Users\gsong\Desktop\Dojo\csharp\basic13\obj\Debug\netcoreapp1.1\basic13.AssemblyInfo.cs
+C:\Users\gsong\Desktop\Dojo\csharp\basic13\obj\Debug\netcoreapp1.1\basic13.dll
+C:\Users\gsong\Desktop\Dojo\csharp\basic13\obj\Debug\netcoreapp1.1\basic13.pdb

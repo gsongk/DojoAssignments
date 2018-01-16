@@ -87,8 +87,7 @@ namespace basic13
         }
         //Eliminate Negative Numbers
         public static void negative(int[] arr){
-            string list = "[";
-            for(int idx = 0; idx<arr.Length; idx++)
+            for(int idx = 0; idx<arr.Length; idx++){
                 if (arr[idx]<0){
                     arr[idx] = 0;
                 }
@@ -111,7 +110,21 @@ namespace basic13
             Console.WriteLine("The max of the array is {0}, the min is {1}, and the average is {2}", max, min, (double)sum / (double)arr.Length);
         }
         //Shifting the Values in an Array
+        public static void ShiftLeft(int[] arr){
+            for (int idx = 0; idx < arr.Length - 1; idx++){
+                arr[idx] = arr[idx + 1];
+            }
+            arr[arr.Length - 1] = 0;
+        }
         //Number to String
+        public static object[] ReplaceNumberWithString(object[] arr){
+            for (int idx = 0; idx < arr.Length; idx++){
+                if ((int)arr[idx] < 0){
+                    arr[idx] = "Dojo";
+                }
+            }
+            return arr;
+        }
         static void Main(string[] args)
         {
             // Print1to255();
@@ -125,6 +138,10 @@ namespace basic13
             // GreaterThanY(myArr, 4);
             // squared(myArr);
             // negative(myArr);
+            // MinMaxAvg(myArr);
+            // ShiftLeft(myArr);
+            // object[] boxedArray = new object[] { -1, 3, 2 - 16 };
+            // ReplaceNumberWithString(boxedArray);
         }
     }
 }

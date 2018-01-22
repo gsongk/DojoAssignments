@@ -1,0 +1,4 @@
+C:\Users\gsong\Desktop\Dojo\csharp\human\bin\Debug\netcoreapp1.1\human.deps.json
+C:\Users\gsong\Desktop\Dojo\csharp\human\bin\Debug\netcoreapp1.1\human.runtimeconfig.json
+C:\Users\gsong\Desktop\Dojo\csharp\human\bin\Debug\netcoreapp1.1\human.runtimeconfig.dev.json
+C:\Users\gsong\Desktop\Dojo\csharp\human\obj\Debug\netcoreapp1.1\human.AssemblyInfo.cs

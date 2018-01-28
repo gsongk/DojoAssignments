@@ -2,29 +2,14 @@
 
 namespace human
 {
-    public class human
+    public class Program
     {
-        public string name;
-        public int strength = 3;
-        public int intelligence = 3;
-        public int dexterity = 3;
-        public int health = 100;
-        public human(string n, int str, int intl, int dex, int hp){
-            name = n;
-            strength = str;
-            intelligence = intl;
-            dexterity = dex;
-            health = hp;
-        }
-        static void Attack(object target)
-        {
-            human enemy = target as human;
-            if(enemy != null){
-                enemy.health -= 5 * strength;
-            }
-        }
-        static void main(){
-            
+        public static void Main(string [] args){
+            Human player1 = new Human("SPAM", 10, 10, 10, 500);
+            Human player2 = new Human("JOE");
+            System.Console.WriteLine(player1.strength);
+            System.Console.WriteLine(player1.strength);
+            player1.attack(player2);
         }
     }
 }

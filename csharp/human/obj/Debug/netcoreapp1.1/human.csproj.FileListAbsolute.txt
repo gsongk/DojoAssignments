@@ -2,3 +2,9 @@ C:\Users\gsong\Desktop\Dojo\csharp\human\bin\Debug\netcoreapp1.1\human.deps.json
 C:\Users\gsong\Desktop\Dojo\csharp\human\bin\Debug\netcoreapp1.1\human.runtimeconfig.json
 C:\Users\gsong\Desktop\Dojo\csharp\human\bin\Debug\netcoreapp1.1\human.runtimeconfig.dev.json
 C:\Users\gsong\Desktop\Dojo\csharp\human\obj\Debug\netcoreapp1.1\human.AssemblyInfo.cs
+c:\Users\gsong\Desktop\Dojo\csharp\human\obj\Debug\netcoreapp1.1\human.csproj.CoreCompileInputs.cache
+c:\Users\gsong\Desktop\Dojo\csharp\human\obj\Debug\netcoreapp1.1\human.AssemblyInfoInputs.cache
+c:\Users\gsong\Desktop\Dojo\csharp\human\bin\Debug\netcoreapp1.1\human.dll
+c:\Users\gsong\Desktop\Dojo\csharp\human\bin\Debug\netcoreapp1.1\human.pdb
+c:\Users\gsong\Desktop\Dojo\csharp\human\obj\Debug\netcoreapp1.1\human.dll
+c:\Users\gsong\Desktop\Dojo\csharp\human\obj\Debug\netcoreapp1.1\human.pdb

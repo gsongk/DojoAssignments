@@ -7451,11 +7451,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\gsong\\Desktop\\Dojo\\csharp\\music-linq\\LinqSkeleton.csproj",
+      "projectUniqueName": "C:\\Users\\gsong\\Desktop\\Dojo\\csharp\\music-linq\\LinqSkeleton.csproj",
       "projectName": "LinqSkeleton",
-      "projectPath": "c:\\Users\\gsong\\Desktop\\Dojo\\csharp\\music-linq\\LinqSkeleton.csproj",
+      "projectPath": "C:\\Users\\gsong\\Desktop\\Dojo\\csharp\\music-linq\\LinqSkeleton.csproj",
       "packagesPath": "C:\\Users\\gsong\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\gsong\\Desktop\\Dojo\\csharp\\music-linq\\obj\\",
+      "outputPath": "C:\\Users\\gsong\\Desktop\\Dojo\\csharp\\music-linq\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gsong\\AppData\\Roaming\\NuGet\\NuGet.Config"

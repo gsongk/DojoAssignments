@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gsong\\Desktop\\Dojo\\csharp\\fundamentalsI\\fundamentalsI.csproj",
-      "projectName": "fundamentalsI",
-      "projectPath": "C:\\Users\\gsong\\Desktop\\Dojo\\csharp\\fundamentalsI\\fundamentalsI.csproj",
+      "projectUniqueName": "C:\\Users\\gsong\\Desktop\\Dojo\\csharp\\humanAssignment\\humanAssignment.csproj",
+      "projectName": "humanAssignment",
+      "projectPath": "C:\\Users\\gsong\\Desktop\\Dojo\\csharp\\humanAssignment\\humanAssignment.csproj",
       "packagesPath": "C:\\Users\\gsong\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gsong\\Desktop\\Dojo\\csharp\\fundamentalsI\\obj\\",
+      "outputPath": "C:\\Users\\gsong\\Desktop\\Dojo\\csharp\\humanAssignment\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

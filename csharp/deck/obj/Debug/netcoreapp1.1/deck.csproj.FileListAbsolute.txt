@@ -1,0 +1,3 @@
+c:\Users\gsong\Desktop\Dojo\csharp\deck\obj\Debug\netcoreapp1.1\deck.csproj.CoreCompileInputs.cache
+c:\Users\gsong\Desktop\Dojo\csharp\deck\obj\Debug\netcoreapp1.1\deck.AssemblyInfoInputs.cache
+c:\Users\gsong\Desktop\Dojo\csharp\deck\obj\Debug\netcoreapp1.1\deck.AssemblyInfo.cs

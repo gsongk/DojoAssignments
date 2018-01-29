@@ -1,0 +1,10 @@
+c:\Users\gsong\Desktop\Dojo\csharp\WNS\bin\Debug\netcoreapp2.0\WNS.deps.json
+c:\Users\gsong\Desktop\Dojo\csharp\WNS\bin\Debug\netcoreapp2.0\WNS.runtimeconfig.json
+c:\Users\gsong\Desktop\Dojo\csharp\WNS\bin\Debug\netcoreapp2.0\WNS.runtimeconfig.dev.json
+c:\Users\gsong\Desktop\Dojo\csharp\WNS\bin\Debug\netcoreapp2.0\WNS.dll
+c:\Users\gsong\Desktop\Dojo\csharp\WNS\bin\Debug\netcoreapp2.0\WNS.pdb
+c:\Users\gsong\Desktop\Dojo\csharp\WNS\obj\Debug\netcoreapp2.0\WNS.csproj.CoreCompileInputs.cache
+c:\Users\gsong\Desktop\Dojo\csharp\WNS\obj\Debug\netcoreapp2.0\WNS.AssemblyInfoInputs.cache
+c:\Users\gsong\Desktop\Dojo\csharp\WNS\obj\Debug\netcoreapp2.0\WNS.AssemblyInfo.cs
+c:\Users\gsong\Desktop\Dojo\csharp\WNS\obj\Debug\netcoreapp2.0\WNS.dll
+c:\Users\gsong\Desktop\Dojo\csharp\WNS\obj\Debug\netcoreapp2.0\WNS.pdb

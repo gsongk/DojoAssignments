@@ -1,0 +1,10 @@
+C:\Users\gsong\Desktop\Dojo\csharp\humanAssignment\bin\Debug\netcoreapp2.0\humanAssignment.deps.json
+C:\Users\gsong\Desktop\Dojo\csharp\humanAssignment\bin\Debug\netcoreapp2.0\humanAssignment.runtimeconfig.json
+C:\Users\gsong\Desktop\Dojo\csharp\humanAssignment\bin\Debug\netcoreapp2.0\humanAssignment.runtimeconfig.dev.json
+C:\Users\gsong\Desktop\Dojo\csharp\humanAssignment\bin\Debug\netcoreapp2.0\humanAssignment.dll
+C:\Users\gsong\Desktop\Dojo\csharp\humanAssignment\bin\Debug\netcoreapp2.0\humanAssignment.pdb
+C:\Users\gsong\Desktop\Dojo\csharp\humanAssignment\obj\Debug\netcoreapp2.0\humanAssignment.csproj.CoreCompileInputs.cache
+C:\Users\gsong\Desktop\Dojo\csharp\humanAssignment\obj\Debug\netcoreapp2.0\humanAssignment.AssemblyInfoInputs.cache
+C:\Users\gsong\Desktop\Dojo\csharp\humanAssignment\obj\Debug\netcoreapp2.0\humanAssignment.AssemblyInfo.cs
+C:\Users\gsong\Desktop\Dojo\csharp\humanAssignment\obj\Debug\netcoreapp2.0\humanAssignment.dll
+C:\Users\gsong\Desktop\Dojo\csharp\humanAssignment\obj\Debug\netcoreapp2.0\humanAssignment.pdb

@@ -6,12 +6,12 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.0": {
-      "SimpleMySql/1.0.0": {
+      "mysql/1.0.0": {
         "dependencies": {
           "MySql.Data": "7.0.7-m61"
         },
         "runtime": {
-          "SimpleMySql.dll": {}
+          "mysql.dll": {}
         }
       },
       "Google.Protobuf/3.0.0": {
@@ -1336,7 +1336,7 @@
     }
   },
   "libraries": {
-    "SimpleMySql/1.0.0": {
+    "mysql/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

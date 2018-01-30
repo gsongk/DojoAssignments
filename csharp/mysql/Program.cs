@@ -1,7 +1,7 @@
 ﻿using System;
 using DbConnection;
 
-namespace SimpleMySql
+namespace mysql
 {
     class Program
     {

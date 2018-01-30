@@ -6734,11 +6734,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gsong\\Desktop\\Dojo\\csharp\\SimpleMySql\\SimpleMySql.csproj",
-      "projectName": "SimpleMySql",
-      "projectPath": "C:\\Users\\gsong\\Desktop\\Dojo\\csharp\\SimpleMySql\\SimpleMySql.csproj",
+      "projectUniqueName": "C:\\Users\\gsong\\Desktop\\Dojo\\csharp\\mysql\\mysql.csproj",
+      "projectName": "mysql",
+      "projectPath": "C:\\Users\\gsong\\Desktop\\Dojo\\csharp\\mysql\\mysql.csproj",
       "packagesPath": "C:\\Users\\gsong\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gsong\\Desktop\\Dojo\\csharp\\SimpleMySql\\obj\\",
+      "outputPath": "C:\\Users\\gsong\\Desktop\\Dojo\\csharp\\mysql\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

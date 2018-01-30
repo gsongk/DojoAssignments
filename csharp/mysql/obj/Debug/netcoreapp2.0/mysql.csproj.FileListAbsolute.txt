@@ -1,0 +1,10 @@
+C:\Users\gsong\Desktop\Dojo\csharp\mysql\bin\Debug\netcoreapp2.0\mysql.deps.json
+C:\Users\gsong\Desktop\Dojo\csharp\mysql\bin\Debug\netcoreapp2.0\mysql.runtimeconfig.json
+C:\Users\gsong\Desktop\Dojo\csharp\mysql\bin\Debug\netcoreapp2.0\mysql.runtimeconfig.dev.json
+C:\Users\gsong\Desktop\Dojo\csharp\mysql\bin\Debug\netcoreapp2.0\mysql.dll
+C:\Users\gsong\Desktop\Dojo\csharp\mysql\bin\Debug\netcoreapp2.0\mysql.pdb
+C:\Users\gsong\Desktop\Dojo\csharp\mysql\obj\Debug\netcoreapp2.0\mysql.csproj.CoreCompileInputs.cache
+C:\Users\gsong\Desktop\Dojo\csharp\mysql\obj\Debug\netcoreapp2.0\mysql.AssemblyInfoInputs.cache
+C:\Users\gsong\Desktop\Dojo\csharp\mysql\obj\Debug\netcoreapp2.0\mysql.AssemblyInfo.cs
+C:\Users\gsong\Desktop\Dojo\csharp\mysql\obj\Debug\netcoreapp2.0\mysql.dll
+C:\Users\gsong\Desktop\Dojo\csharp\mysql\obj\Debug\netcoreapp2.0\mysql.pdb

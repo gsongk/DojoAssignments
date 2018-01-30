@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/SimpleMySql.csproj"
+                "${workspaceFolder}/mysql.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

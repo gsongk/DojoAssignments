@@ -1,0 +1,10 @@
+C:\Users\gsong\Desktop\Dojo\csharp\aspdotnet\bin\Debug\netcoreapp2.0\aspdotnet.deps.json
+C:\Users\gsong\Desktop\Dojo\csharp\aspdotnet\bin\Debug\netcoreapp2.0\aspdotnet.runtimeconfig.json
+C:\Users\gsong\Desktop\Dojo\csharp\aspdotnet\bin\Debug\netcoreapp2.0\aspdotnet.runtimeconfig.dev.json
+C:\Users\gsong\Desktop\Dojo\csharp\aspdotnet\bin\Debug\netcoreapp2.0\aspdotnet.dll
+C:\Users\gsong\Desktop\Dojo\csharp\aspdotnet\bin\Debug\netcoreapp2.0\aspdotnet.pdb
+C:\Users\gsong\Desktop\Dojo\csharp\aspdotnet\obj\Debug\netcoreapp2.0\aspdotnet.csproj.CoreCompileInputs.cache
+C:\Users\gsong\Desktop\Dojo\csharp\aspdotnet\obj\Debug\netcoreapp2.0\aspdotnet.AssemblyInfoInputs.cache
+C:\Users\gsong\Desktop\Dojo\csharp\aspdotnet\obj\Debug\netcoreapp2.0\aspdotnet.AssemblyInfo.cs
+C:\Users\gsong\Desktop\Dojo\csharp\aspdotnet\obj\Debug\netcoreapp2.0\aspdotnet.dll
+C:\Users\gsong\Desktop\Dojo\csharp\aspdotnet\obj\Debug\netcoreapp2.0\aspdotnet.pdb

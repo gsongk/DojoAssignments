@@ -1,0 +1,17 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1> Hello from the View! </h1>
+        <h2>Hi!</h2>
+        @for(int i =0; i<4; i++)
+        {
+            <p>We are at interator ...@i </p>
+        }
+        @foreach (int num in ViewBag.Hello)
+        {
+            <p>@num is the number!</p>
+        }
+    </body>
+</html>

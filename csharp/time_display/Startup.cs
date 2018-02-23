@@ -26,8 +26,9 @@ namespace time_display
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-            } 
-            app.UseMvc();
+            }
+            // Other middleware
+        app.UseMvc();
         }
     }
 }

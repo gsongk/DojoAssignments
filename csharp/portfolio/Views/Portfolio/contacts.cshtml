@@ -3,11 +3,23 @@
     <head>
         <meta charset='utf-8'>
         <title>Index</title>
-        // In this context '~' refers to the wwwroot folder
         <link rel="stylesheet" href="~/css/style.css"/>
     </head>
     <body>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="projects">Projects</a></li>
+            <li><a href="contacts">contacts</a></li>
+        </ul>
+
         <h1>Hello ASP.NET Mvc!</h1>
         <h2>Contact Page</h2>
+
+        <form>
+            <input type="text" placeholder="Type your name"/><br>
+            <input type="text" placeholder="Type your email"/><br>
+            <input type="text" placeholder="Type your message"/>
+            <input type="submit" value="Submit"/>
+        </form>
     </body>
 </html>

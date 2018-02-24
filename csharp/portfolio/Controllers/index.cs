@@ -5,18 +5,18 @@ namespace Portfolio.Controllers
 {
     public class index : Controller
     {
-        [HttpGet("")]
+        [HttpPost("")]
         public IActionResult Home()
         {
             return View();
         }
 
-        [HttpGet("projects")]
+        [HttpPost("Projects")]
         public IActionResult Projects()
         {
             return View();
         }
-        [HttpGet("contacts")]
+        [HttpPost("Contacts")]
         public IActionResult Contacts()
         {
             return View();

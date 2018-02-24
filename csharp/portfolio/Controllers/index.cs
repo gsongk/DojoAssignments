@@ -5,9 +5,19 @@ namespace Portfolio.Controllers
 {
     public class index : Controller
     {
-        [HttpGet]
-        [Route("")]
-        public IActionResult Index()
+        [HttpGet("")]
+        public IActionResult Home()
+        {
+            return View();
+        }
+
+        [HttpGet("projects")]
+        public IActionResult Projects()
+        {
+            return View();
+        }
+        [HttpGet("contacts")]
+        public IActionResult Contacts()
         {
             return View();
         }

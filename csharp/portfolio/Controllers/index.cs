@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Portfolio.Controllers
 {
-    public class index : Controller
+    public class Portfolio : Controller
     {
         [HttpGet("")]
         public IActionResult Home()
@@ -11,12 +11,12 @@ namespace Portfolio.Controllers
             return View();
         }
 
-        [HttpGet("Projects")]
+        [HttpGet("projects")]
         public IActionResult Projects()
         {
             return View();
         }
-        [HttpGet("Contacts")]
+        [HttpGet("contacts")]
         public IActionResult Contacts()
         {
             return View();

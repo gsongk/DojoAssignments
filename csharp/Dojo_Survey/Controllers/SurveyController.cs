@@ -5,16 +5,20 @@ namespace Dojo_Survey.Controllers
 {
     public class Dojo_Survey: Controller
     {
-        [HttpPost("")]
-        public IActionResult Home(string name, string comment)
+        [HttpGet("")]
+        public IActionResult Home()
         {
             return View();
         }
 
-        [HttpGet]
-        [Route("review")]
-        public IActionResult review()
+        [HttpPost("review")]
+        public IActionResult Review(string name, string location, string language, string comment)
         {
+            ViewBag.name = name;
+            ViewBag.location = location;
+            ViewBag.language = language;
+            ViewBag.comment = comment;
+            
             return View();
         }
     }

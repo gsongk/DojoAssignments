@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,7 +9,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace Password
+namespace password
 {
     public class Startup
     {
@@ -17,6 +18,7 @@ namespace Password
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -26,6 +28,7 @@ namespace Password
             loggerFactory.AddConsole();
             app.UseDeveloperExceptionPage();
             app.UseMvc();
+            app.UseSession();
         }
     }
 }

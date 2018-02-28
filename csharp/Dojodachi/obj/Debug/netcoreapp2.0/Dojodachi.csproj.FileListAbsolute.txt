@@ -1,0 +1,10 @@
+C:\Users\gsong\Desktop\Dojo\csharp\Dojodachi\bin\Debug\netcoreapp2.0\Dojodachi.deps.json
+C:\Users\gsong\Desktop\Dojo\csharp\Dojodachi\bin\Debug\netcoreapp2.0\Dojodachi.runtimeconfig.json
+C:\Users\gsong\Desktop\Dojo\csharp\Dojodachi\bin\Debug\netcoreapp2.0\Dojodachi.runtimeconfig.dev.json
+C:\Users\gsong\Desktop\Dojo\csharp\Dojodachi\bin\Debug\netcoreapp2.0\Dojodachi.dll
+C:\Users\gsong\Desktop\Dojo\csharp\Dojodachi\bin\Debug\netcoreapp2.0\Dojodachi.pdb
+C:\Users\gsong\Desktop\Dojo\csharp\Dojodachi\obj\Debug\netcoreapp2.0\Dojodachi.csproj.CoreCompileInputs.cache
+C:\Users\gsong\Desktop\Dojo\csharp\Dojodachi\obj\Debug\netcoreapp2.0\Dojodachi.AssemblyInfoInputs.cache
+C:\Users\gsong\Desktop\Dojo\csharp\Dojodachi\obj\Debug\netcoreapp2.0\Dojodachi.AssemblyInfo.cs
+C:\Users\gsong\Desktop\Dojo\csharp\Dojodachi\obj\Debug\netcoreapp2.0\Dojodachi.dll
+C:\Users\gsong\Desktop\Dojo\csharp\Dojodachi\obj\Debug\netcoreapp2.0\Dojodachi.pdb

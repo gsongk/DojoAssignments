@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
+using DbConnection;
 
 namespace hello.Controllers
 {
@@ -13,7 +14,8 @@ namespace hello.Controllers
         [Route("")]
         public IActionResult Index()
         {
-            return View();
+            List<Dictionary<string, object>> AllUsers = DbConnector.Query("SELECT * FROM users");
+            // Other code
         }
     }
 }

@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - hello</title>
-    
+    <title>@ViewData["Title"] - CandymanExample</title>
+    <link rel="stylesheet" href=""
+            asp-fallback-href="function link() { [native code] }"
+            asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
     <div class="container body-content">
+        //Our Views are rendered into this line
         @RenderBody()
     </div>
-        
-        
-        <script src="~/js/site.js" asp-append-version="true"></script>
-
+    <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("scripts", required: false)
 </body>
 </html>

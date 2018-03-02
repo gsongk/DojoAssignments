@@ -1,0 +1,14 @@
+<div style="margin: 200px auto; border: 2px solid black; width: 400px; padding: 50px; text-align:center">
+    <h2>Name: @Model.Name</h2>
+    <h4>Height: @Model.Height inches</h4>
+    <h4>Weight: @Model.Weight oz</h4>
+
+    <h4>Types:</h4>
+    @foreach (var item in Model.Types)
+    {
+        <h5 style="margin-left:20px">@item["type"]["name"]</h5>
+
+    }
+
+    <img src="@ViewBag.Image" alt="Alternate Text" />
+</div>

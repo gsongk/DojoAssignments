@@ -9,7 +9,7 @@ body{
 #actionButtons{
     margin: 20px;
 }
-button{
+input, button{
     box-shadow: 5px 5px grey;
     padding: 5px;
 }

@@ -6,19 +6,52 @@
         <link rel="stylesheet" href="~/css/style.css"/>
     </head>
     <body>
-        <h1>Djodachi</h1>
+        <h1>Dojodachi</h1>
         <div id="stats">
-            <p>Fullness: () Happiness: () Meals: () Energy: ()</p>
+            <p>Fullness: (@ViewBag.Dojodachi.Fullness) 
+                Happiness: (@ViewBag.Dojodachi.Happiness) 
+                Meals: (@ViewBag.Dojodachi.Meals) 
+                Energy: (@ViewBag.Dojodachi.Energy)</p>
         </div>
         <div id="main">
             <img src="~/css/cat.png" alt ="cat" style="height: 100px; width: 100px;">
-            <div id="actions"></div>
+            
+            <div id="actions">
+                <p>@ViewBag.Reaction</p>
+                <p>@ViewBag.message</p>
+            </div>
         </div>
         <div id="actionButtons">
-            <button id="feed">Feed</button>
-            <button id="play">Play</button>
-            <button id="work">Work</button>
-            <button id="sleep">Sleep</button>
+            @{
+                if(ViewBag.GameStatus =="running")
+                {
+                    <form action="/process" method="post">
+                    <input type="hidden" name="action" value="Feed">
+                    <button type="submit">Feed</button>
+                    </form>
+
+                    <form action="/process" method="post">
+                    <input type="hidden" name="action" value="Play">
+                    <button type="submit">Play</button>
+                    </form>
+                    
+                    <form action="/process" method="post">
+                    <input type="hidden" name="action" value="Work">
+                    <button type="submit">Work</button>
+                    </form>
+
+                    <form action="/process" method="post">
+                    <input type="hidden" name="action" value="Sleep">
+                    <button type="submit">Sleep</button>
+                    </form>
+                }
+                else if (ViewBag.GameStatus =="over")
+                {
+                    <a href="/reset" method="post"><button> Reset </button></a>
+                }
+            }
+            
+
         </div>
     </body>
 </html>

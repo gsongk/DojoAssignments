@@ -1,0 +1,12 @@
+<h1>ALL QUOTES</h1>
+
+@if(ViewBag.Quotes.Length > 0)
+{
+    @foreach(var quote in ViewBag.Quotes)
+    {
+        <p>"@quote.content "</p>
+        <ul>
+            <li>- @quote.author <p>at @quote.created_at;</p></li>
+        </ul>
+    }
+}

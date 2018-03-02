@@ -1,0 +1,26 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h1>QUOTING INDEX</h1>
+
+<h2>FORM1</h2>
+
+    <form action="/post" method="POST">
+        <input type="hidden" name="typee" value="form1">
+        <label for="author">Author</label>
+        <input type="text" name="author" placeholder="AUTHOR">
+        <label for="content">Content</label>
+        <input type="text" name="content" placeholder="CONTENT">
+        <input type="submit" value="SUBMIT QUOTE">
+    </form>
+
+
+    <h2>FORM2</h2>
+    <form action="/post" method="POST">
+        <input type="hidden" name="typee" value="form2">
+        <label for="author">Author</label>
+        <input type="text" name="author" placeholder="AUTHOR">
+        <label for="content">Content</label>
+        <input type="text" name="content" placeholder="CONTENT">
+        <input type="submit" value="SUBMIT QUOTE">
+    </form>

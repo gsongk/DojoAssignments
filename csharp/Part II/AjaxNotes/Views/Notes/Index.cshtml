@@ -1,0 +1,13 @@
+@model AjaxNotes.Models.Note
+
+<h1>Notes</h1>
+<hr/>
+<div id="notes" class="row">
+</div>
+<div class="row">
+    <p id="error"></p>
+    <form id="noteForm">
+        <input asp-for="NoteTitle"/>
+        <button type="submit">Add Note</button>
+    </form>
+</div>

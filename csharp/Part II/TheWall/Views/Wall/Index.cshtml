@@ -1,0 +1,47 @@
+@model TheWall.Models.WallModels
+<nav>
+    <h1>THE WALL</h1>
+    <h3>Hello @ViewBag.User["first_name"]</h3>
+    <a href="logout">Logout</a>
+</nav>
+<form method="post" asp-controller="Wall" asp-action="CreateMessage">
+    <div class="form-group">
+        <span asp-validation-for="MessagePost.MessageContent"></span>
+        <label for="" asp-for="MessagePost.MessageContent"></label>
+        <textarea class="form-control" asp-for="MessagePost.MessageContent"></textarea>
+    </div>
+    <input type="submit" value="Post">
+</form>
+<hr>
+@{
+    foreach(var message in ViewBag.Messages)
+    {
+        <div class="message">
+            <h3>@message["first_name"] @message["last_name"] - @message["created_at"].ToString("D")</h3>
+            <p>@message["content"]</p>
+            <form asp-action="CreateComment" method="post" asp-controller="Wall">
+                <div class="form-group">
+                    <span asp-validation-for="CommentPost.CommentContent"></span>
+                    <label asp-for="CommentPost.CommentContent"></label>
+                    <textarea class="form-control" asp-for="CommentPost.CommentContent"></textarea>
+                </div>
+                <input type="hidden" asp-for="CommentPost.MessageId" value="@message["message_id"]">
+                <input type="submit" value="Comment">
+            </form>
+            <hr>
+            <h3>Comments on this Post</h3>
+            @{
+                foreach(var comment in ViewBag.Comments)
+                {
+                    if(comment["message_id"] == message["message_id"])
+                    {
+                        <div class="comment">
+                            <h3>@comment["first_name"] @comment["last_name"] - @comment["created_at"].ToString("D")</h3>
+                            <p>@comment["content"]</p>
+                        </div>
+                    }
+                }
+            }
+        </div>
+    }
+}

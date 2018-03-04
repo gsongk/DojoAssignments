@@ -1,0 +1,10 @@
+<h1>ALL REVIEWS</h1>
+@foreach(var rev in ViewBag.AR)
+{
+    <textarea name="" id="" cols="30" rows="10">
+        <h1>@rev.name</h1>
+        <p>@rev.rev</p>
+        <p>@rev.review_date</p>
+    </textarea>
+    <hr>
+    }

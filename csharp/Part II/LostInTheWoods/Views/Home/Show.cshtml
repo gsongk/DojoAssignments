@@ -1,0 +1,22 @@
+@model Trail
+
+<a asp-action="Index">Home Page</a>
+
+<div class="m-2 p-2">
+    <h1>@Model.name</h1>
+
+    <h4 class="mt-5">Description</h4>
+    <p>@Model.description</p>
+
+
+    <h4 class="mt-5">Trail Length</h4>
+
+    <h5>@Model.length</h5>
+
+    <h4 class="mt-5">Elevation Change</h4>
+    <h5>@Model.elevationChange</h5>
+
+    <h5 class="mt-5">Longitude - @Model.elevationChange</h5>
+
+    <h5>Latitude - @Model.elevationChange</h5>
+</div>

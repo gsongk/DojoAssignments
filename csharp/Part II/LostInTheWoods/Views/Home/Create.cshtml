@@ -1,0 +1,33 @@
+@model Trail
+
+<div class="panel panel-success m-5 p-5 w-25">
+    <div class="panel-heading text-center"><H4>Add a trail to the directory</H4> </div>
+    <div class="panel-body">
+        <form asp-action="Create" method="post" class="">
+            <div class="form-group">
+                <label asp-for="name"></label>
+                <input class="form-control" asp-for="name"/>
+            </div>            
+            <div class="form-group">
+                <label asp-for="description">Description:</label>
+                <input class="form-control" asp-for="description"/>
+            </div>            
+            <div class="form-group">
+                <label asp-for="length">Trail Length in miles</label>
+                <input class="form-control" asp-for="length"/>
+            </div>            
+            <div class="form-group">
+                <label asp-for="longitude">Longitude</label>
+                <input class="form-control" asp-for="longitude"/>
+            </div>            
+            <div class="form-group">
+                <label asp-for="latitude">latitude</label>
+                <input class="form-control" asp-for="latitude"/>
+            </div>            
+            <div class="form-group">
+                <label ></label>
+                <input type="submit" value="Create record!"/>
+            </div>
+        </form>
+    </div>
+</div>

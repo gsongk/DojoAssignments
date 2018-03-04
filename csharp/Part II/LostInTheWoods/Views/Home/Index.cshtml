@@ -1,0 +1,17 @@
+@model List<Trail>
+
+<div class="m-5"><h1>Lost in the Woods</h1> <h4>Directory of Glacier National Park HikingTrails</h4> </div>
+
+<table class="table table-sm table-striped table-bordered p-5 m-5 w-75">
+    <thead class="thead-dark"><tr><th>Name</th><th>Descriptions</th><th>Change in Elevation</th></tr></thead>
+    @foreach (var trail in Model)
+    {
+        <tr>
+            <td><a asp-action="Show" asp-route-id="@trail.id">@trail.name</a></td>
+            <td>@trail.description</td>
+            <td>@trail.elevationChange</td>
+
+        </tr>
+    }
+</table>
+<a class="m-5 p-5 =" asp-action="Create" asp-controller="home"><button class="btn btn-primary">Add a Trail</button></a>

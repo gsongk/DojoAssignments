@@ -1,0 +1,46 @@
+@model DojosViewModel
+<div class="directory float-left w-25 ml-5">
+    <div>
+        <h3>Registered Dojos</h3>
+        <table class="table table-striped table-sm table-bordered">
+            <thead class="text-gray-dark">
+            <tr><th>Dojo Name:</th><th>Dojo Location</th></tr>
+            </thead>
+            @foreach (var dojo in Model.dojos)
+            {
+                if(dojo.id > 1) {
+                    <tr>
+                        <td><a asp-action="ShowDojo" asp-route-id="@dojo.id" >@dojo.name</a></td>
+                        <td>@dojo.location</td>
+                    
+                    </tr>
+            } }
+        </table>
+    </div>
+</div>
+<div class="form float-right w-25 mr-5">
+    <div>
+        <h3>Register a Dojo</h3>
+        <form asp-action="CreateDojo" method="post">
+            <div asp-validation-summary="ModelOnly"></div>
+            <div class="form-group">
+                <label asp-for="dojo.name">Dojo Name:</label>
+                <input asp-for="dojo.name" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="dojo.location">Dojo Location:</label>
+                <input asp-for="dojo.location" class="form-control"/>
+
+            </div>
+
+            <div class="form-group">
+                <label asp-for="dojo.description">Additional Dojo Information:</label>
+                <textarea cols="25" rows="4" asp-for="dojo.description" class="form-control">
+             
+            </textarea>
+            </div>
+            <input type="submit" value="add Dojo"/>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+@using System.Collections
+@functions {
+    public IEnumerable DojoList { get; set; }
+}
+@model DojoList
+
+
+    @foreach(var name in DojoList)
+    {
+        <option value="@name"></option>
+    }

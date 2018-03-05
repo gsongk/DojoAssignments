@@ -1,0 +1,21 @@
+
+<h1>Login <a href="/" class="button button-primary">Not Registered?</a></h1>
+@{
+    if (TempData["Error"] != null)
+    {
+<p>@TempData["Error"]</p>
+    }
+}
+<div class="row">
+    <form class="six columns" action="/loginUser" method="post">
+        <div class="row">
+            <label for="email">Email:</label>
+            <input class="u-full-width" type="text" id="email" name="Email">
+        </div>
+        <div class="row">
+            <label for="password">Password:</label>
+            <input class="u-full-width" type="password" id="password" name="Password">
+        </div>
+        <input type="submit" class="button-primary" value="Login">
+    </form>
+</div>

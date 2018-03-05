@@ -1,0 +1,34 @@
+<h1>Welcome, @ViewBag.UserInfo.FirstName @ViewBag.UserInfo.LastName <a href="/logout" class="button button-primary">Logout</a></h1>
+<div class="row">
+    <form class="six columns" action="/transaction" method="post">
+@{
+    if (TempData["Error"] != null)
+    {
+        <p>@TempData["Error"]</p>
+    }
+}
+        <label for="amount">Withdraw(-)/Deposit(+)</label>
+        <input id="amount" type="number" name="Amount">
+        <input type="submit" class="button-primary" value="Submit">
+    </form>
+    <p class="six columns">Current Balance: $@ViewBag.UserInfo.Balance</p>
+</div>    
+<table>
+    <thead>
+        <tr>
+            <th>Amount</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+@{
+    foreach(var wd in ViewBag.UserInfo.Withdrawals)
+    {
+        <tr>
+            <td>$@wd.Amount</td>
+            <td>@wd.CreatedAt.ToString("MMM dd yyyy")</td>
+        </tr>
+    }
+}
+    </tbody>
+</table>

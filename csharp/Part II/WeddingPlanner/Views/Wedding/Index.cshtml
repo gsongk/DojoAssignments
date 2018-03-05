@@ -1,0 +1,33 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+@model WeddingPlanner.Models.Dashboard
+@using WeddingPlanner.Models;
+@Html.Partial("./Partials/Header", Model.User)
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Wedding</th>
+            <th>Date</th>
+            <th>Guests</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(Wedding w in Model.Weddings)
+        {
+        <tr>
+            <td><a href="/wedding/show/@w.wedding_id">@w.bride_name & @w.groom_name</a></td>
+            <td>@w.date.ToString("D")</td>
+            <td>@w.Guests.Count()</td>
+            @{
+                if(w.Guests.Where(g => g.user_id == Model.User.user_id).SingleOrDefault() == null)
+                    {<td><a href="/wedding/rsvp/@w.wedding_id">RSVP</a></td>}
+                else
+                    {<td><a href="/wedding/unrsvp/@w.wedding_id">Un-RSVP</a></td>}
+            }
+        </tr>
+        }
+    </tbody>
+    <a href="/wedding/create"><button>Create</button></a>
+</table>

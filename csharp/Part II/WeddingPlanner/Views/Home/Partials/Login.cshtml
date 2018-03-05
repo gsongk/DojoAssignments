@@ -1,0 +1,15 @@
+@model WeddingPlanner.Models.LogUser
+<h2>Login</h2>
+<form method="post" asp-controller="Home" asp-action="Login">
+    <div class="form-group">
+        <span asp-validation-for="LogEmail"></span>
+        <label asp-for="LogEmail"></label>
+        <input class="form-control" asp-for="LogEmail">
+    </div>
+    <div class="form-group">
+        <span asp-validation-for="LogPassword"></span>
+        <label for="" asp-for="LogPassword"></label>
+        <input class="form-control" asp-for="LogPassword">
+    </div>
+    <input type="submit" value="Login">
+</form>

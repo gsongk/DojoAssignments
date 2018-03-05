@@ -1,0 +1,29 @@
+@model WeddingPlanner.Models.ViewWedding
+<nav>
+    <h1>Plan Your Wedding</h1>
+    <a href="/wedding">Dashboard</a>
+    <a href="/home/logout">Logout</a>
+</nav>
+<form method="post" asp-controller="Wedding" asp-action="Create">
+    <div class="form-group">
+        <span asp-validation-for="WedderOne"></span>
+        <label asp-for="WedderOne"></label>
+        <input class="form-control" asp-for="WedderOne">
+    </div>
+    <div class="form-group">
+        <span asp-validation-for="WedderTwo"></span>
+        <label asp-for="WedderTwo"></label>
+        <input class="form-control" asp-for="WedderTwo">
+    </div>
+    <div class="form-group">
+        <span asp-validation-for="Date"></span>
+        <label asp-for="Date"></label>
+        <input class="form-control" asp-for="Date">
+    </div>
+    <div class="form-group">
+        <span asp-validation-for="Address"></span>
+        <label asp-for="Address"></label>
+        <input class="form-control" asp-for="Address">
+    </div>
+    <input type="submit" value="Create">
+</form>

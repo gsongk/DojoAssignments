@@ -1,0 +1,21 @@
+@model WeddingPlanner.Models.Wedding
+@using WeddingPlanner.Models
+<nav>
+    <h1>@Model.bride_name and @Model.groom_name's Wedding</h1>
+    <a href="/wedding">Dashboard</a>
+    <a href="/home/logout">Logout</a>
+</nav>
+<h3>@Model.date.ToString("D")</h3>
+<h3>Guests:</h3>
+<ul>
+    @foreach(RSVP rsvp in @Model.Guests)
+    {
+        <li>@rsvp.Guest.first_name @rsvp.Guest.last_name</li>
+    }
+</ul>
+<div data="@Model.address" id='map'></div>
+<script src="~/js/initMap.js"></script>
+<script async defer
+    type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script>

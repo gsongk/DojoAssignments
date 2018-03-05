@@ -1,0 +1,11 @@
+/*Write all of your CSS here*/
+.index-form{
+    display: inline-block;
+    margin: 10px;
+    width: 35%;
+    vertical-align: top;
+}
+#map{
+    height: 400px;
+    width: 100%;
+}

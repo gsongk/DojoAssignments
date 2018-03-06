@@ -1,0 +1,10 @@
+C:\Users\gsong\Desktop\Dojo\csharp\Part I\practice\bin\Debug\netcoreapp2.0\practice.deps.json
+C:\Users\gsong\Desktop\Dojo\csharp\Part I\practice\bin\Debug\netcoreapp2.0\practice.runtimeconfig.json
+C:\Users\gsong\Desktop\Dojo\csharp\Part I\practice\bin\Debug\netcoreapp2.0\practice.runtimeconfig.dev.json
+C:\Users\gsong\Desktop\Dojo\csharp\Part I\practice\bin\Debug\netcoreapp2.0\practice.dll
+C:\Users\gsong\Desktop\Dojo\csharp\Part I\practice\bin\Debug\netcoreapp2.0\practice.pdb
+C:\Users\gsong\Desktop\Dojo\csharp\Part I\practice\obj\Debug\netcoreapp2.0\practice.csproj.CoreCompileInputs.cache
+C:\Users\gsong\Desktop\Dojo\csharp\Part I\practice\obj\Debug\netcoreapp2.0\practice.AssemblyInfoInputs.cache
+C:\Users\gsong\Desktop\Dojo\csharp\Part I\practice\obj\Debug\netcoreapp2.0\practice.AssemblyInfo.cs
+C:\Users\gsong\Desktop\Dojo\csharp\Part I\practice\obj\Debug\netcoreapp2.0\practice.dll
+C:\Users\gsong\Desktop\Dojo\csharp\Part I\practice\obj\Debug\netcoreapp2.0\practice.pdb

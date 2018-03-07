@@ -2,5 +2,23 @@
     ViewData["Title"] = "Home Page";
 }
 <div class="jumbotron">
-<h1>Index!</h1>
+<h1>All my Friends: </h1>
+@foreach (var friend in ViewBag.Friends)
+{
+    <p>@friend["first_name"] @friend["last_name"]</p>
+}
+
+//Specific Person Selected with information
+<!-- @model friend
+<h2>@Model.first_name @Model.last_name</h2>
+<h3>@Model.email</h3>
+<h4>@Model.age</h4> -->
+
+<form action="/posting" method="POST">
+    <input type="text" name="first_name" placeholder="First Name:">
+    <input type="text" name="last_name" placeholder="Last Name:">
+    <input type="text" name="email" placeholder="Email:">
+    <input type="text" name="age" placeholder="Age:">
+    <input type="submit" value="Post!">
+</form>
 </div>

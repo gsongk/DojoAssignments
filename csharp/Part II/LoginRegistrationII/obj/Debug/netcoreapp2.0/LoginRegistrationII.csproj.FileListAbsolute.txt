@@ -1,0 +1,10 @@
+C:\Users\gsong\Desktop\Dojo\csharp\Part II\LoginRegistrationII\bin\Debug\netcoreapp2.0\LoginRegistrationII.deps.json
+C:\Users\gsong\Desktop\Dojo\csharp\Part II\LoginRegistrationII\bin\Debug\netcoreapp2.0\LoginRegistrationII.runtimeconfig.json
+C:\Users\gsong\Desktop\Dojo\csharp\Part II\LoginRegistrationII\bin\Debug\netcoreapp2.0\LoginRegistrationII.runtimeconfig.dev.json
+C:\Users\gsong\Desktop\Dojo\csharp\Part II\LoginRegistrationII\bin\Debug\netcoreapp2.0\LoginRegistrationII.dll
+C:\Users\gsong\Desktop\Dojo\csharp\Part II\LoginRegistrationII\bin\Debug\netcoreapp2.0\LoginRegistrationII.pdb
+C:\Users\gsong\Desktop\Dojo\csharp\Part II\LoginRegistrationII\obj\Debug\netcoreapp2.0\LoginRegistrationII.csproj.CoreCompileInputs.cache
+C:\Users\gsong\Desktop\Dojo\csharp\Part II\LoginRegistrationII\obj\Debug\netcoreapp2.0\LoginRegistrationII.AssemblyInfoInputs.cache
+C:\Users\gsong\Desktop\Dojo\csharp\Part II\LoginRegistrationII\obj\Debug\netcoreapp2.0\LoginRegistrationII.AssemblyInfo.cs
+C:\Users\gsong\Desktop\Dojo\csharp\Part II\LoginRegistrationII\obj\Debug\netcoreapp2.0\LoginRegistrationII.dll
+C:\Users\gsong\Desktop\Dojo\csharp\Part II\LoginRegistrationII\obj\Debug\netcoreapp2.0\LoginRegistrationII.pdb
